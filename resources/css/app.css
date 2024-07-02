@@ -5,3 +5,180 @@
 [x-cloak] {
     display: none;
 }
+@layer base {
+    @font-face {
+      font-family: "dana Bold";
+      src: local("dana Bold"), url("./font/Dana/woff2/DanaFaNum-DemiBold.woff2");
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "dana medium";
+      src: local("dana medium"), url("./font/Dana/woff2/DanaFaNum-Medium.woff2");
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "dana regular";
+      src: local("dana regular"), url("./font/Dana/woff2/DanaFaNum-Regular.woff2");
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "DanaFaNum";
+      src: local("DanaFaNum"), url("./font/Dana/woff2/DanaFaNum-Black.ttf");
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "morba Bold";
+      src: local("morba Bold"), url("./font/Morabba/woff2/Morabba-Bold.woff2");
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "morba medium";
+      src: local("morba medium"), url("./font/Morabba/woff2/Morabba-Medium.woff2");
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "morba Light";
+      src: local("morba Light"), url("./font/Morabba/woff2/Morabba-Light.woff2");
+      font-display: swap;
+    }
+    
+  }
+
+  @layer components {
+    .overlay {
+      @apply fixed inset-0 w-full h-full bg-black/40 z-10;
+    }
+    .menos {
+      @apply scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100 overflow-y-auto scrollbar-thin  top-0 right-0 w-64  min-h-screen bg-white flex-col fixed z-20 dark:bg-zinc-700 dark:text-white;
+    }
+    .menosShop {
+      @apply top-0 left-0 w-64  min-h-screen bg-white flex-col fixed z-20 dark:bg-zinc-700 dark:text-white;
+    }
+
+    .subopenmeno {
+      @apply flex flex-col font-dana-Med  p-5 opacity-100  bg-white dark:bg-zinc-700   dark:text-white text-zinc-700 text-sm tracking-normal space-y-4 transition-all child:inline-block font-normal  child-hover:text-orange-300 top-full delay-75 pr-3;
+    }
+
+    .subMenu::after {
+      content: " ";
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 100px;
+      background-color: #fdba74;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: -6px;
+      margin: auto;
+    }
+    .subMenu {
+      padding-right: 10px;
+      position: relative;
+      color: #fdba74;
+    }
+    .dir {
+      direction: ltr;
+      @apply flex  overflow-y-auto scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100  scrollbar-thin;
+    }
+
+    .button,
+    .input {
+      -webkit-appearance: none; /* Safari and Chrome */
+      -moz-appearance: none; /* Firefox */
+      appearance: none; /* Standard */
+    }
+    .crice {
+      @apply flex justify-center items-center border rounded-full;
+    }
+    .crice__lg {
+      @apply w-[203px] h-[203px] border-white/25;
+    }
+
+    .crice__md {
+      @apply w-[145px] h-[145px] border-white/50;
+    }
+    .crice__sm {
+      @apply w-[95px] h-[95px] border-white/80;
+    }
+    .crice_main {
+      @apply absolute left-0 bottom-0 right-0 mx-auto translate-y-2/4;
+    }
+    object {
+      display: inline-block;
+    }
+    .selector {
+      appearance: none;
+    }
+    @media screen and (min-width: 980px) {
+      html.dark .prodcrt {
+        background-image: url("/style/img/body-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+      }
+      .prodcrt {
+        background: linear-gradient(
+            rgba(243, 244, 246, 0.65),
+            rgba(243, 244, 246, 0.65)
+          ),
+          url("/style/img/body-bg.png");
+
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    }
+    .sectoin_title {
+      @apply text-5xl font-morba-Med text-zinc-700 dark:text-white;
+    }
+    .sectoin_subtilte {
+      @apply inline-block text-3xl font-morba-Med mt-1.5 text-zinc-700 dark:text-white;
+    }
+    .sectoin_arow {
+      @apply flex items-center justify-center text-xl   md:gap-x-1 text-orange-300 tracking-tighter rounded-md hover:bg-orange-300/20 transition-colors h-10;
+    }
+    .sectoin_Body {
+      @apply grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 md:gap-5 child:h-[200px] child:md:h-[460px] child:bg-white child:dark:bg-zinc-700 child:shadow-norml child:rounded-xl gap-y-3 gap-x-2;
+    }
+    .offer {
+      @apply relative text-gray-400;
+    }
+    .offer::after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: #ef4444;
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      top: -2px;
+    }
+    .category-item1 {
+      background: linear-gradient(
+          270deg,
+          rgba(0, 0, 0, 0.6) 33.85%,
+          rgba(243, 244, 246, 0.1) 100%
+        ),
+        url("/style/img/categories/category-left.jpg");
+
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .category-item2 {
+      background: linear-gradient(
+          270deg,
+          rgba(0, 0, 0, 0.6) 33.85%,
+          rgba(243, 244, 246, 0.1) 100%
+        ),
+        url("/style/img/categories/category-right.jpg");
+
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  }
+  @layer utilities {
+    .flexcenter {
+      @apply flex items-center justify-center;
+    }
+  }
