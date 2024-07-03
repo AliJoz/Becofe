@@ -41,7 +41,7 @@
       src: local("morba Light"), url("./font/Morabba/woff2/Morabba-Light.woff2");
       font-display: swap;
     }
-    
+
   }
 
   @layer components {
@@ -77,10 +77,10 @@
       position: relative;
       color: #fdba74;
     }
-    .dir {
+    /* .dir {
       direction: ltr;
       @apply flex  overflow-y-auto scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100  scrollbar-thin;
-    }
+    } */
 
     .button,
     .input {
@@ -137,9 +137,9 @@
     .sectoin_arow {
       @apply flex items-center justify-center text-xl   md:gap-x-1 text-orange-300 tracking-tighter rounded-md hover:bg-orange-300/20 transition-colors h-10;
     }
-    .sectoin_Body {
+    /* .sectoin_Body {
       @apply grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 md:gap-5 child:h-[200px] child:md:h-[460px] child:bg-white child:dark:bg-zinc-700 child:shadow-norml child:rounded-xl gap-y-3 gap-x-2;
-    }
+    } */
     .offer {
       @apply relative text-gray-400;
     }

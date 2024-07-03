@@ -15,13 +15,6 @@ export default {
         extend: {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
-                "dana-B": ["dana Bold"],
-                "dana-Med": ["dana medium"],
-                "dana-R": ["dana regular"],
-                "morba-B": ["morba Bold"],
-                "morba-Med": ["morba medium"],
-                "morba-L": ["morba Light"],
-                "dana-Nnm": ["DanaFaNum"],
             },
             screens: {
                 lg: "900px",
@@ -46,6 +39,15 @@ export default {
             borderRadius: {
                 "4xl": "2rem",
             },
+            fontFamily: {
+                "dana-B": "dana Bold",
+                "dana-Med": "dana medium",
+                "dana-R": "dana regular",
+                "morba-B": "morba Bold",
+                "morba-Med": "morba medium",
+                "morba-L": "morba Light",
+                "dana-Nnm": "DanaFaNum",
+            },
             letterSpacing: {
                 tightest: "-0.065em",
             },
@@ -57,11 +59,25 @@ export default {
                 },
             },
             backgroundImage: {
-                HomeMobail: "{{asset('/public/img/headerBgMobile.png') }}" ,
-
-                HomeDesktop: "{{asset('/public/img/headerBgDesktop.png)",
+                HomeMobail: 'URL("/public/img/headerBgMobile.png")',
+                HomeDesktop: "URL(/public/img/headerBgDesktop.png)",
             },
         },
+        screens: {
+            xs: "475px",
+            sm: "576px",
+            md: "760px",
+            xl: "1024px",
+            xxl: "1280px",
+        },
     },
-    plugins: [],
+    plugins: [
+        forms,
+        typography,
+        function ({ addVariant }) {
+            addVariant("child", "&>*");
+            addVariant("child-hover", "&>*:hover");
+        },
+        require("tailwind-scrollbar"),
+    ],
 };
