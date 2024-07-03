@@ -1,4 +1,5 @@
 <div>
+
     <svg class="hidden">
         <symbol
           id="shopping-cart"
@@ -423,7 +424,7 @@
 
 
     <section>
-        <div class="container">
+    <div class="container">
           <div class="flex justify-between items-center">
             <div>
               <h3 class="sectoin_title">محصولات پر فروش</h3>
@@ -446,8 +447,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="swiper p-2 mySwiper">
+
+         <div class="flex ">
+        <div class="swiper swiper-container p-2 mySwiper ">
           <div class="swiper-wrapper">
             <!-- Slides -->
 
@@ -457,7 +459,7 @@
               >
                 <div class="relative mb-0.5 md:mb-5">
                   <img
-                    src="/public/img/products/p2.png"
+                    src="/img/products/p2.png"
                     class="w-32 mx-auto md:w-auto"
                     loading="lazy"
                     alt="product1"
@@ -539,7 +541,7 @@
               >
                 <div class="relative mb-0.5 md:mb-5">
                   <img
-                    src="/public/img/products/p1.png"
+                    src="/img/products/p1.png"
                     class="w-32 mx-auto md:w-auto"
                     loading="lazy"
                     alt="product1"
@@ -621,7 +623,7 @@
               >
                 <div class="relative mb-0.5 md:mb-5">
                   <img
-                    src="/public/img/products/p1.png"
+                    src="/img/products/p1.png"
                     class="w-32 mx-auto md:w-auto"
                     loading="lazy"
                     alt="product1"
@@ -703,7 +705,7 @@
               >
                 <div class="relative mb-0.5 md:mb-5">
                   <img
-                    src="style/img/products/p1.png"
+                    src="/img/products/p1.png"
                     class="w-32 mx-auto md:w-auto"
                     loading="lazy"
                     alt="product1"
@@ -786,7 +788,7 @@
               >
                 <div class="relative mb-0.5 md:mb-5">
                   <img
-                    src="/public/img/products/p1.png"
+                    src="/img/products/p1.png"
                     class="w-32 mx-auto md:w-auto"
                     loading="lazy"
                     alt="product1"
@@ -864,5 +866,8 @@
             </div>
           </div>
         </div>
+        
+
+    </div>
       </section>
 </div>

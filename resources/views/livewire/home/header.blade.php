@@ -716,7 +716,7 @@
                 class="flex flex-row-reverse gap-x-1 border-b border-b-gray-100 dark:border-b-gray-100/10 pl-2"
               >
                 <img
-                  src="style/img/products/p1.png"
+                  src="/img/products/p1.png"
                   alt="Product"
                   class="w-[90px] h-[90px]"
                   srcset=""
