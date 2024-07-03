@@ -6,45 +6,49 @@
     display: none;
 }
 @layer base {
-    @font-face {
-      font-family: "dana Bold";
-      src: local("dana Bold"), url("./font/Dana/woff2/DanaFaNum-DemiBold.woff2");
-      font-display: swap;
+     @font-face {
+        font-family: "Iran Bold";
+        src: local("Iran Bold"),
+            url("/public/font/woff/iranyekanwebbold.woff");
+        font-display: swap;
     }
     @font-face {
-      font-family: "dana medium";
-      src: local("dana medium"), url("./font/Dana/woff2/DanaFaNum-Medium.woff2");
-      font-display: swap;
+        font-family: "Iran medum";
+        src: local("Iran medum"),
+            url("/public/font/woff/iranyekanwebmedium.woff");
+        font-display: swap;
     }
     @font-face {
-      font-family: "dana regular";
-      src: local("dana regular"), url("./font/Dana/woff2/DanaFaNum-Regular.woff2");
-      font-display: swap;
+        font-family: "Iran regular";
+        src: local("Iran regular"),
+            url("/public/font/woff/iranyekanwebregular.woff");
+        font-display: swap;
     }
     @font-face {
-      font-family: "DanaFaNum";
-      src: local("DanaFaNum"), url("./font/Dana/woff2/DanaFaNum-Black.ttf");
-      font-display: swap;
+        font-family: "Iran thin";
+        src: local("Iran thin"), url("/public/font/woff/iranyekanwebthin.woff");
+        font-display: swap;
     }
     @font-face {
-      font-family: "morba Bold";
-      src: local("morba Bold"), url("./font/Morabba/woff2/Morabba-Bold.woff2");
-      font-display: swap;
+        font-family: "IranFaNum";
+        src: local("IranFaNum"), url("/public/font/woff/IRANYekanBlackFaNum.ttf");
+        font-display: swap;
     }
     @font-face {
-      font-family: "morba medium";
-      src: local("morba medium"), url("./font/Morabba/woff2/Morabba-Medium.woff2");
-      font-display: swap;
+        font-family: "Iran Block";
+        src: local("Iran Block"),
+            url("/public/font/woff/iranyekanwebblack.woff");
+        font-display: swap;
     }
     @font-face {
-      font-family: "morba Light";
-      src: local("morba Light"), url("./font/Morabba/woff2/Morabba-Light.woff2");
-      font-display: swap;
+        font-family: "Iran Light";
+        src: local("Iran Light"),
+            url("/public/font/woff/iranyekanweblight.woff");
+        font-display: swap;
     }
+}
 
-  }
-
-  @layer components {
+@layer components {
     .overlay {
       @apply fixed inset-0 w-full h-full bg-black/40 z-10;
     }
@@ -56,7 +60,7 @@
     }
 
     .subopenmeno {
-      @apply flex flex-col font-dana-Med  p-5 opacity-100  bg-white dark:bg-zinc-700   dark:text-white text-zinc-700 text-sm tracking-normal space-y-4 transition-all child:inline-block font-normal  child-hover:text-orange-300 top-full delay-75 pr-3;
+      @apply flex flex-col font-iran-Med  p-5 opacity-100  bg-white dark:bg-zinc-700   dark:text-white text-zinc-700 text-sm tracking-normal space-y-4 transition-all child:inline-block font-normal  child-hover:text-orange-300 top-full delay-75 pr-3;
     }
 
     .subMenu::after {
@@ -77,10 +81,10 @@
       position: relative;
       color: #fdba74;
     }
-    /* .dir {
+    .dir {
       direction: ltr;
       @apply flex  overflow-y-auto scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100  scrollbar-thin;
-    } */
+    }
 
     .button,
     .input {
@@ -112,7 +116,7 @@
     }
     @media screen and (min-width: 980px) {
       html.dark .prodcrt {
-        background-image: url("/style/img/body-bg.png");
+        background-image: url("/public/img/body-bg.png");
         background-repeat: no-repeat;
         background-size: 100%;
 
@@ -122,24 +126,24 @@
             rgba(243, 244, 246, 0.65),
             rgba(243, 244, 246, 0.65)
           ),
-          url("/style/img/body-bg.png");
+          url("/public/img/body-bg.png");
 
         background-repeat: no-repeat;
         background-size: 100%;
       }
     }
     .sectoin_title {
-      @apply text-5xl font-morba-Med text-zinc-700 dark:text-white;
+      @apply text-5xl font-iran-Med text-zinc-700 dark:text-white;
     }
     .sectoin_subtilte {
-      @apply inline-block text-3xl font-morba-Med mt-1.5 text-zinc-700 dark:text-white;
+      @apply inline-block text-3xl font-iran-Med mt-1.5 text-zinc-700 dark:text-white;
     }
     .sectoin_arow {
       @apply flex items-center justify-center text-xl   md:gap-x-1 text-orange-300 tracking-tighter rounded-md hover:bg-orange-300/20 transition-colors h-10;
     }
-    /* .sectoin_Body {
+    .sectoin_Body {
       @apply grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 md:gap-5 child:h-[200px] child:md:h-[460px] child:bg-white child:dark:bg-zinc-700 child:shadow-norml child:rounded-xl gap-y-3 gap-x-2;
-    } */
+    }
     .offer {
       @apply relative text-gray-400;
     }
@@ -159,7 +163,7 @@
           rgba(0, 0, 0, 0.6) 33.85%,
           rgba(243, 244, 246, 0.1) 100%
         ),
-        url("/style/img/categories/category-left.jpg");
+        url("/public/img/categories/category-left.jpg");
 
       background-repeat: no-repeat;
       background-size: cover;
@@ -170,7 +174,7 @@
           rgba(0, 0, 0, 0.6) 33.85%,
           rgba(243, 244, 246, 0.1) 100%
         ),
-        url("/style/img/categories/category-right.jpg");
+        url("/public/img/categories/category-right.jpg");
 
       background-repeat: no-repeat;
       background-size: cover;

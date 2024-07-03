@@ -14,11 +14,15 @@
     </head>
     <body class="bg-gray-100 dark:bg-zinc-800 h-[3000px] rtl ">
        <div>
-       
-        <livewire:home.header>
-            <livewire:home.sectoin>
+
+            <livewire:home.header>
+            <livewire:home.prodact>
+                <livewire:home.categori-both>
+                    <livewire:home.categori>
+                        <livewire:home.profitable>
+            {{-- <livewire:home.sectoin> --}}
        </div>
-       <div class="w-20 h-6 bg-black"></div>
+
 
 
        @livewireScripts
