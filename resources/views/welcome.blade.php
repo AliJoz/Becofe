@@ -18,9 +18,10 @@
 
             <livewire:home.header>
             <livewire:home.prodact>
-                <livewire:home.categori-both>
-                    <livewire:home.categori>
-                        <livewire:home.profitable>
+            <livewire:home.categori-both>
+              <livewire:home.categori>
+              <livewire:home.profitable>
+              <livewire:home.matlab>
             {{-- <livewire:home.sectoin> --}}
 
 
