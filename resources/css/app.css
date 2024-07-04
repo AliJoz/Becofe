@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 [x-cloak] {
     display: none;
 }
@@ -53,7 +54,7 @@
       @apply fixed inset-0 w-full h-full bg-black/40 z-10;
     }
     .menos {
-      @apply scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100 overflow-y-auto scrollbar-thin  top-0 right-0 w-64  min-h-screen bg-white flex-col fixed z-20 dark:bg-zinc-700 dark:text-white;
+      /* @apply scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100 overflow-y-auto scrollbar-thin  top-0 right-0 w-64  min-h-screen bg-white flex-col fixed z-20 dark:bg-zinc-700 dark:text-white; */
     }
     .menosShop {
       @apply top-0 left-0 w-64  min-h-screen bg-white flex-col fixed z-20 dark:bg-zinc-700 dark:text-white;
@@ -83,7 +84,7 @@
     }
     .dir {
       direction: ltr;
-      @apply flex  overflow-y-auto scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100  scrollbar-thin;
+      /* @apply flex  overflow-y-auto scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100  scrollbar-thin; */
     }
 
     .button,

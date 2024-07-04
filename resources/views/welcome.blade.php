@@ -6,14 +6,15 @@
 
         <title>Laravel</title>
 
-        <!-- Fonts -->
+        @vite([
+            'resources/css/app.css',
+            'resources/js/app.js'
+        ])
 
-        <link href="{{mix('/resources/css/app.css')}}" rel="stylesheet">
-        <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="bg-gray-100 dark:bg-zinc-800 h-[3000px] rtl ">
-       <div>
+    <body class="bg-gray-100 dark:bg-zinc-800 h-[3000px]  ">
+
 
             <livewire:home.header>
             <livewire:home.prodact>
@@ -21,10 +22,10 @@
                     <livewire:home.categori>
                         <livewire:home.profitable>
             {{-- <livewire:home.sectoin> --}}
-       </div>
 
 
 
        @livewireScripts
+       <script src="{{asset('js/js.js')}}"></script>
     </body>
 </html>

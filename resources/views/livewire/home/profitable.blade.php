@@ -424,9 +424,9 @@
 
 
     <section>
-    <div class="container">
+     <div class="container">
           <div class="flex justify-between items-center">
-            <div>
+            <div class="py-6">
               <h3 class="sectoin_title">محصولات پر فروش</h3>
               <span class="sectoin_subtilte">پیشنهاد قهوه خور ها ...</span>
             </div>
@@ -448,12 +448,11 @@
             </div>
           </div>
 
-         <div class="flex ">
-        <div class="swiper swiper-container p-2 mySwiper ">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
 
-            <div class="swiper-slide">
+           <div class="swiper mySwiper ">
+                <div class="swiper-wrapper ">
+              <!-- Slides -->
+                <div class="swiper-slide">
               <div
                 class="h-[220px] md:h-[460px] w-[176px] md:w-[300px] p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-norml"
               >
@@ -866,8 +865,11 @@
             </div>
           </div>
         </div>
-        
 
-    </div>
-      </section>
+
+     </div>
+    </section>
+  
+
+
 </div>

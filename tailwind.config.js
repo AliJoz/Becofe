@@ -59,8 +59,8 @@ export default {
                 },
             },
             backgroundImage: {
-                HomeMobail: 'URL("/public/img/headerBgMobile.png")',
-                HomeDesktop: "URL(/public/img/headerBgDesktop.png)",
+                HomeMobail: 'URL("/img/headerBgMobile.png")',
+                HomeDesktop: "URL(/img/headerBgDesktop.png)",
             },
         },
         screens: {
