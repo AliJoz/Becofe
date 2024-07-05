@@ -36,8 +36,8 @@ new Swiper(".mySwiper", {
   },
   }
 );
-
-
+console.log(document.querySelectorAll(".btnThem"));
+/// them dark and light
 let togglebtn = document.querySelectorAll(".btnThem");
 
 togglebtn.forEach((btn) => {
@@ -45,6 +45,7 @@ togglebtn.forEach((btn) => {
     let icons = btn.querySelector(".icon-light");
     let changeIcon = document.querySelectorAll(".icon-light");
     let c = document.querySelector(".changeName");
+   
 
     if (localStorage.theme === "dark") {
       document.documentElement.classList.remove("dark");
@@ -63,10 +64,10 @@ togglebtn.forEach((btn) => {
 
       c.innerHTML = "تم روشن";
       localStorage.theme = "dark";
+      console.log("sa")
     }
   });
 });
-console.log("sa")
 ////
 // meno
 let btnclose = document.querySelector(".close");

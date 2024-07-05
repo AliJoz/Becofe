@@ -437,10 +437,10 @@
         srcset=""
       />
         <ul
-          class="flex items-center font-dana-R text-base gap-x-5 md:text-base lg:text-xl text-gray-300 tracking-tightest child:leading-[56px] md:gap-x-7"
+          class="flex items-center font-dana-R text-base gap-x-5  lg:text-xl text-gray-300 tracking-tightest child:leading-[56px] md:gap-x-7 md:text-xl"
         >
           <li>
-            <a href="#" class="text-orange-200 font-dana-Med"> صفحه اصلی</a>
+            <a href="#" class="text-orange-200 font-dana-Med "> صفحه اصلی</a>
           </li>
           <li class="relative group">
             <a href="#" class="group-hover:text-orange-300 transition-colors"

@@ -422,8 +422,8 @@
     </svg>
 
         <section
-        class="Home bg-HomeMobail relative xs:h-auto xs:aspect-[2/1] md:aspect-auto md:bg-HomeDesktop bg-no-repeat bg-cover bg[center-top]"
-      >
+        class="Home bg-HomeMobail relative xs:h-auto xs:aspect-[2/1] md:aspect-auto md:bg-HomeDesktop bg-no-repeat bg-cover bg-center-top"
+        style="background-image: url('/img/headerBgDesktop.png');">
         <div
           class="container relative h-full md:min-h-screen flex justify-center items-center overflow-y-hidden"
         >

@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>@yield('title')|
+            Becofe
+        </title>
 
         @vite([
             'resources/css/app.css',
@@ -13,8 +15,7 @@
 
         @livewireStyles
     </head>
-    <body class="bg-gray-100 dark:bg-zinc-800 h-[3000px]  ">
-
+    <body class="bg-gray-100 dark:bg-zinc-800  ">
 
             <livewire:home.header>
             <livewire:home.prodact>
