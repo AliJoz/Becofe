@@ -15,3 +15,16 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::middleware('web')->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    });
+
+    // مسیرهای وب اضافی
+});
+
+// Route::middleware(['web', 'auth'])->prefix('management')->group(function () {
+//     // مسیرهای ادمین
+//     require base_path('/routes/admin.php');
+// });
