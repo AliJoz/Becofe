@@ -1,17 +1,24 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="fa">
+
 <head>
-    <title>Laravel Livewire Example</title>
-    @livewireStyles
+    @include('livewire.home.layouts.head')
+    <title>@yield('title') | دیجی استور</title>
 </head>
 <body>
 
-  <div>
-  <h1>laravel livewire example</h1>
-  <livewire:home.header>
-  </div>
+    <livewire:home.layouts.header>
+        <livewire:home.header>
+            <livewire:home.prodact>
+            <livewire:home.categori-both>
+              <livewire:home.categori>
+              <livewire:home.profitable>
+              <livewire:home.matlab>
 
-    @livewireScripts
+
+    {{ $slot }}
+    <livewire:home.layouts.footer>
+    @include('livewire.home.layouts.scripts')
 </body>
 </html>

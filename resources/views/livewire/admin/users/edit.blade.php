@@ -7,7 +7,7 @@
                     <div class="col-12 box-margin">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title mb-2">ویرایش کاربر: {{ $user->name }}</h4>
+                                {{-- <h4 class="card-title mb-2">ویرایش کاربر: {{ $user->name }}</h4> --}}
                                 <a href="{{ route('admin.users') }}" class="btn btn-success mb-2 mr-2"
                                     style="float:left;margin-top:-37px;"><i class="fa fa-list"></i> لیست
                                     کاربران</a>

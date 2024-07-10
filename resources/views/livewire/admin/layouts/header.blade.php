@@ -20,7 +20,7 @@
             <ul class="left-side-navbar d-flex align-items-center">
                 <li class="hide-phone app-search">
                     <div class="dashboard-clock">
-                        <span>{{ $v }}</span><br>
+                      {{-- //  <span>{{ $v }}</span><br> --}}
                         <ul class="d-flex align-items-center justify-content-end ltr">
                             <li id="hours">12</li>
                             <li>:</li>
@@ -62,18 +62,18 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ $user->profilePhoto }}" alt=""></button>
+                    {{-- <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ $user->profilePhoto }}" alt=""></button> --}}
                     <div class="dropdown-menu dropdown-menu-right">
                         <!-- User Profile Area -->
                         <div class="user-profile-area">
                             <div class="user-profile-heading">
                                 <!-- Thumb -->
                                 <div class="profile-img">
-                                    <img class="chat-img mr-2" src="{{ $user->profilePhoto }}" alt="">
+                                    {{-- <img class="chat-img mr-2" src="{{ $user->profilePhoto }}" alt=""> --}}
                                 </div>
                                 <!-- Profile Text -->
                                 <div class="profile-text">
-                                    <h6>{{ $user->name }}</h6>
+                                    {{-- <h6>{{ $user->name }}</h6> --}}
                                     <span>توسعه دهنده</span>
                                 </div>
                             </div>

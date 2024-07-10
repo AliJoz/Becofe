@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //---------------------------------------HomePage---------------------------------------//
-Route::get('/', App\Livewire\Admin\Home\Index::class)->name('admin');
+Route::get('/', App\Livewire\Admin\Home\Index::class)->name('admin.home');
 
 // //---------------------------------------Settings---------------------------------------//
 // //Settings Footer ETC
