@@ -17,7 +17,7 @@
                     <li class="{{ Request::routeIs('admin.home') ? 'active' : '' }}"><a
                             href="{{ route('admin.home') }}"><i
                                 class="zmdi zmdi-view-dashboard"></i><span>داشبورد</span></a></li>
-                    {{-- <li class="treeview">
+                    <li class="treeview">
                         <a href="javascript:void(0)"><i class="fa fa-newspaper-o"></i> <span>مقالات</span> <i class="fa fa-angle-left"></i></a>
                         <ul class="treeview-menu">
                             <li><a href="article-categories.html">دسته بندی</a></li>
@@ -110,7 +110,7 @@
                         <ul class="treeview-menu">
                             <li><a href="#">موجودی</a></li>
                         </ul>
-                    </li> --}}
+                    </li>
 
                     @canany(['product-categories', 'product-brands', 'product-garanties', 'product-colors',
                         'product-attribute', 'product-galleries','admin.product.prices'])
