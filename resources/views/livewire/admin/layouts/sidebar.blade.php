@@ -3,7 +3,7 @@
     <div class="ecaps-logo max-h-[90px]">
         <a href="{{ route('home') }}" target="_blank"><img class="desktop-logo w-10 h-7 bg-fixed"
                 src="{{ asset('admin/img/core-img/logo.png') }}" alt="لوگوی دسک تاپ"> <img class="small-logo"
-                src="{{ asset('admin/img/core-img/small-logo.png') }}" alt="آرم موبایل"></a>
+               >
     </div>
 
     <!-- Side Nav -->

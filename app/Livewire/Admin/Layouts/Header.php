@@ -16,7 +16,7 @@ class Header extends Component
         $v=$v->format('Y.m.d');
      
       
-        //$user = \Auth::user();
-        return view('livewire.admin.layouts.header',compact('v'));
+        $user = \Auth::user();
+        return view('livewire.admin.layouts.header',compact('v','user'));
     }
 }

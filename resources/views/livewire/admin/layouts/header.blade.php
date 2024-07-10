@@ -62,18 +62,18 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    {{-- <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ $user->profilePhoto }}" alt=""></button> --}}
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('admin/img/member-img/3.png') }}" alt=""></button>
                     <div class="dropdown-menu dropdown-menu-right">
                         <!-- User Profile Area -->
                         <div class="user-profile-area">
                             <div class="user-profile-heading">
                                 <!-- Thumb -->
                                 <div class="profile-img">
-                                    {{-- <img class="chat-img mr-2" src="{{ $user->profilePhoto }}" alt=""> --}}
+                                    <img class="chat-img mr-2" src="{{asset('admin/img/member-img/3.png') }}" alt="">
                                 </div>
                                 <!-- Profile Text -->
                                 <div class="profile-text">
-                                    {{-- gir <h6>{{ $user->name }}</h6> --}}
+                                     <h6>{{ $user->name }}</h6>
                                     <span>توسعه دهنده</span>
                                 </div>
                             </div>
