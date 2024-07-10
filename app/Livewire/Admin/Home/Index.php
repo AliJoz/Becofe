@@ -12,6 +12,7 @@ class Index extends Component
     {
         $this->readyToLoad = true;
     }
+
     public function render()
     {
         $logs = $this->readyToLoad ? Log::latest()->take(5)->get() : [];
