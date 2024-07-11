@@ -73,7 +73,7 @@
                                 </div>
                                 <!-- Profile Text -->
                                 <div class="profile-text">
-                                     <h6>{{ $user->name }}</h6>
+                                     <h6>{{$user->name }}</h6>
                                     <span>توسعه دهنده</span>
                                 </div>
                             </div>

@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+
+
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 
 
@@ -18,18 +20,16 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-Route::get('home',
-    [HomeController::class, 'create'])
-    ->name('home');
 
+    // Route::middleware('web')->group(function () {
+    //     Route::get('/', function () {
+    //         return view('welcome');
+    //     });
 
-Route::middleware('web')->group(function () {
-    Route::get('/', function () {
-        return view('welcome');
-    });
+    //     // مسیرهای وب اضافی
+    // });
+// Route::get('/home', [HomeController::class, 'index'])->name('web');
 
-    // مسیرهای وب اضافی
-});
 
 // Route::middleware(['web', 'auth'])->prefix('management')->group(function () {
 //     // مسیرهای ادمین

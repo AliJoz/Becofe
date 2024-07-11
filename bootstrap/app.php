@@ -20,10 +20,7 @@ return Application::configure(basePath: dirname(__DIR__))
             ->prefix('management')
             ->group(base_path('routes/admin.php'));
 
-           Route::middleware('web')
-            ->prefix('management')
-            ->group(base_path('routes/admin.php'));
-
+        
 
         },
         // web: __DIR__.'/../routes/web.php',

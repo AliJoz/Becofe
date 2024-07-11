@@ -7,7 +7,7 @@ use Livewire\Component;
 class Index extends Component
 {
     public $readyToLoad = false;
-    
+
 
     public function loadLogs()
     {
