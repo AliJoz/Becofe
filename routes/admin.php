@@ -21,7 +21,7 @@ Route::get('/', App\Livewire\Admin\Home\Index::class)->name('admin.home');
 Route::get('/home',App\Livewire\Home\Home\Index::class)->name('admin.home');
 // //---------------------------------------Settings---------------------------------------//
 // //Settings Footer ETC
-// Route::get('/settings/footer', App\Livewire\Admin\Settings\Footer\Index::class)->name('admin.settings.footer');
+Route::get('/settings/footer', App\Livewire\Home\Admin\Settings\Footer\Lable::class)->name('admin.settings.footer');
 // //Settings Slider Index
 // Route::get('/settings/sliders', App\Http\Livewire\Admin\Settings\Index\Index::class)->name('admin.settings.sliders');
 // //Settings Footer ETC
