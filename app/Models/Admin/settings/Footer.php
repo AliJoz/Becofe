@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Footer extends Model
 {
     use HasFactory;
-    protected $connection = "mysql-settings";
+    protected $connection = "mysql-setting";
 
-    protected $fillable = ['upLabel','widgetLabel1','widgetLabel2','widgetLabel3','widgetLabel4','widgetLabel5'
-                            ,'rssLabel','socialLabel','supportLabel','phoneLabel','addressLabel','emailLabel','aboutHeadLabel'
-                            ,'aboutbodyLabel','copyRight'];
+    protected $fillable = ['uplable','widerLable1','widerLable2','widerLable3','widerLable4','widerLable5'
+                            ,'rrsLable','soctaiLable','suppirtLable','phoneLable','addresLable','emailLable','aboutHeadLabel'
+                            ,'aboutbodyLable','copyright'];
 }

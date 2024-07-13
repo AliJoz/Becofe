@@ -10,7 +10,7 @@ class Footerlogo extends Model
 {
     use HasFactory;
     use SoftDeletes;
-    protected $connection = "mysql-settings";
+    protected $connection = "mysql-setting";
     protected $table = "footer-logos";
     protected $fillable = ['title','type','image','url','isActive'];
 }

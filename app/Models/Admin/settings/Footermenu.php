@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Footermenu extends Model
 {
     use HasFactory;
-    protected $connection = "mysql-settings";
+    protected $connection = "mysql-setting";
     protected $table = "footer-menus";
     protected $fillable = ['title','url','type','isActive'];
 }
