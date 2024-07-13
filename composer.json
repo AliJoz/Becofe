@@ -13,8 +13,8 @@
         "laravel/tinker": "^2.9",
         "laravel/ui": "*",
         "livewire/livewire": "^3.5",
-         "predis/predis": "^2.2"
-
+        "predis/predis": "^2.2",
+        "realrashid/sweet-alert": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

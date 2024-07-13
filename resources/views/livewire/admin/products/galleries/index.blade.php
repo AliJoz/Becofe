@@ -24,7 +24,7 @@
                                                 <label for="exampleInputEmail12">انتخاب محصول:</label>
                                                 <div wire:ignore>
                                                     <select class="form-control"
-                                                        wire:model.lazy="product" id="product" style="width: 100%;">
+                                                        wire:model.blur="product" id="product" style="width: 100%;">
                                                         <option value="">--هیچکدام--</option>
                                                         @foreach (\App\Models\Admin\Products\Product::all() as $product)
                                                             <option value="{{ $product->id }}">
@@ -37,7 +37,7 @@
 
                                             <div class="input-group cust-file-button mb-3">
                                                 <div class="custom-file">
-                                                    <input type="file" wire:model.lazy="picture"
+                                                    <input type="file" wire:model.blur="picture"
                                                         class="custom-file-input form-control" id="inputGroupFile03">
                                                     <label class="custom-file-label" for="inputGroupFile03">تصویر
                                                         محصول</label>
@@ -87,7 +87,7 @@
                                         style="float:left;margin-top:-37px;"><i class="fa fa-file-excel-o"></i> خروجی
                                         اکسل</button> --}}
                                     <hr>
-                                    <input wire:model="search" type="search" class="form-control mb-2 w-50 float-left"
+                                    <input wire:model.live="search" type="search" class="form-control mb-2 w-50 float-left"
                                         placeholder="جستجو...">
 
                                     <table id="datatable-buttons" class="table table-striped dt-responsive nowrap"

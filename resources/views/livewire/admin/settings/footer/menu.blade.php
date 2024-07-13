@@ -59,14 +59,14 @@
                                                                         <div class="form-group">
                                                                             <label for="exampleInputEmail111">عنوان
                                                                                 منو:</label>
-                                                                            <input type="text" wire:model="Footermenu.title"
+                                                                            <input type="text" wire:model.live="Footermenu.title"
                                                                                 class="form-control"
                                                                                 id="exampleInputEmail111">
                                                                         </div>
                                                                         <div class="form-group">
                                                                             <label for="exampleInputEmail111">لینک:</label>
                                                                             <input type="text" style="text-align:left"
-                                                                                wire:model="Footermenu.url"
+                                                                                wire:model.live="Footermenu.url"
                                                                                 class="form-control"
                                                                                 id="exampleInputEmail111">
                                                                         </div>
@@ -74,7 +74,7 @@
                                                                             <label for="exampleInputEmail12">جایگاه
                                                                                 منو:</label>
                                                                             <select class="form-control"
-                                                                                wire:model="Footermenu.type"
+                                                                                wire:model.live="Footermenu.type"
                                                                                 style="width: 100%;" required>
                                                                                 <option value="">-- هیچکدام --</option>
                                                                                 @php
@@ -116,7 +116,7 @@
                                                             <div class="card-body">
                                                                 <h4 class="card-title mb-2">لیست منو های فوتر</h4>
                                                                 <hr>
-                                                                <input wire:model="search" type="search"
+                                                                <input wire:model.live="search" type="search"
                                                                     class="form-control mb-2 w-50 float-left"
                                                                     placeholder="جستجو...">
 

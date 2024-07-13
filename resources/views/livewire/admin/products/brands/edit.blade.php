@@ -15,11 +15,11 @@
                                         @include('errors.error')
                                         <div class="form-group">
                                             <label for="exampleInputEmail111">عنوان برند:</label>
-                                            <input type="text" wire:model.lazy='brand.title' class="form-control"
+                                            <input type="text" wire:model.blur='brand.title' class="form-control"
                                                 id="exampleInputEmail111">
                                         </div>
                                         <div class="checkbox checkbox-primary d-inline">
-                                            <input type="checkbox" wire:model="brand.isActive" id="checkbox-p-1">
+                                            <input type="checkbox" wire:model.live="brand.isActive" id="checkbox-p-1">
                                             <label for="checkbox-p-1" class="cr">فعال</label>
                                         </div>
 
@@ -49,7 +49,7 @@
                                     style="float:left;margin-top:-37px;"><i class="fa fa-plus-square"></i> افزودن</a>
 
                                 <hr>
-                                <input wire:model="search" type="search" class="form-control mb-2 w-50 float-left"
+                                <input wire:model.live="search" type="search" class="form-control mb-2 w-50 float-left"
                                     placeholder="جستجو...">
 
                                     <table id="datatable-buttons" class="table table-striped dt-responsive nowrap"

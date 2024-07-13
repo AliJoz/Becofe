@@ -30,7 +30,7 @@
                                             <div class="form-group">
                                                 <label for="exampleInputEmail12">دسته بندی مادر:</label>
                                                 <div wire:ignore>
-                                                    <select class="form-control" wire:model.lazy="parent_id" id="parents"
+                                                    <select class="form-control" wire:model.blur="parent_id" id="parents"
                                                         required="required" style="width: 100%;">
                                                         @foreach ($parent as $category)
                                                             <option value="{{ $category->id }}">
@@ -43,22 +43,22 @@
 
                                             <div class="form-group">
                                                 <label for="exampleInputEmail111">عنوان دسته بندی:</label>
-                                                <input type="text" wire:model.lazy='category.title' class="form-control"
+                                                <input type="text" wire:model.blur='category.title' class="form-control"
                                                     id="exampleInputEmail111">
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputEmail111">توضیحات دسته بندی:</label>
-                                                <textarea wire:model.lazy='category.description' class="form-control" id="exampleInputEmail111"></textarea>
+                                                <textarea wire:model.blur='category.description' class="form-control" id="exampleInputEmail111"></textarea>
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputEmail111">عنوان متا:</label>
-                                                <input type="text" wire:model.lazy='category.metaTitle'
+                                                <input type="text" wire:model.blur='category.metaTitle'
                                                     class="form-control" id="meta-title">
                                                 <div id="counter1" style="font-size:12px"></div>
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputEmail111">توضیحات متا:</label>
-                                                <textarea wire:model.lazy='category.metaDescription' class="form-control" id="meta-description"></textarea>
+                                                <textarea wire:model.blur='category.metaDescription' class="form-control" id="meta-description"></textarea>
                                                 <div id="counter2" style="font-size:12px"></div>
                                             </div>
 
@@ -92,7 +92,7 @@
                                         style="float:left;margin-top:-37px;"><i class="fa fa-file-excel-o"></i> خروجی
                                         اکسل</button> --}}
                                     <hr>
-                                    <input wire:model="search" type="search" class="form-control mb-2 w-50 float-left"
+                                    <input wire:model.live="search" type="search" class="form-control mb-2 w-50 float-left"
                                         placeholder="جستجو...">
 
                                     <table id="datatable-buttons" class="table table-striped dt-responsive nowrap"

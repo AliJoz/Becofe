@@ -14,9 +14,11 @@
     <script src="{{ asset('admin/js/default-assets/peity-demo.js') }}"></script>
 
     <script src="{{ asset('admin/plugins/select2/js/select2.full.min.js') }}" defer></script>
-    @vite(
+   <script src="{{mix('/js/app.js')}}"></script>
 
-        'resources/js/app.js'
+   @vite(
+
+        '/resources/js/app.js'
     )
     @yield('scripts')
     <livewire:scripts />

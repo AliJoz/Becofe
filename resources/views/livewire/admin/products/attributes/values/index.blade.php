@@ -17,7 +17,7 @@
                                             @include('errors.error')
                                             <div class="form-group">
                                                 <label for="exampleInputEmail111">مقدار:</label>
-                                                <input type="text" wire:model.lazy='value.value' class="form-control"
+                                                <input type="text" wire:model.blur='value.value' class="form-control"
                                                     id="exampleInputEmail111">
                                             </div>
 
@@ -40,7 +40,7 @@
                                 <div class="card-body">
                                     <h4 class="card-title mb-2">لیست مقدار ویژگی محصولات</h4>
                                     <hr>
-                                    <input wire:model="search" type="search" class="form-control mb-2 w-50 float-left"
+                                    <input wire:model.live="search" type="search" class="form-control mb-2 w-50 float-left"
                                         placeholder="جستجو...">
 
                                     <table id="datatable-buttons" class="table table-striped dt-responsive nowrap"

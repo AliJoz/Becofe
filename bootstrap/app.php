@@ -20,7 +20,7 @@ return Application::configure(basePath: dirname(__DIR__))
             ->prefix('management')
             ->group(base_path('routes/admin.php'));
 
-        
+
 
         },
         // web: __DIR__.'/../routes/web.php',
@@ -34,11 +34,11 @@ return Application::configure(basePath: dirname(__DIR__))
     )
 
     ->withMiddleware(function (Middleware $middleware) {
-        // $middleware->validateCsrfTokens(except: ['stripe/*']);
+        $middleware->validateCsrfTokens(except: ['stripe/*']);
         // $middleware->encryptCookies(except: ['cookie_name']);
         // $middleware->validateSignatures(except: ['fbclid', 'utm_campaign']);
         // $middleware->trustProxies(at: ['192.168.1.1']);
-        // $middleware->preventRequestsDuringMaintenance(except: ['stripe/*']);
+        $middleware->preventRequestsDuringMaintenance(except: ['stripe/*']);
         // $middleware->throttleApi(limiter: 'api', redis: true);
         // $middleware->authenticateSessions();
     })
@@ -46,3 +46,4 @@ return Application::configure(basePath: dirname(__DIR__))
         // Add your exception handling here.
     })
     ->create();
+

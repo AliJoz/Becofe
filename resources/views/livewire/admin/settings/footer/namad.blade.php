@@ -46,27 +46,27 @@
                                             <label class="col-form-label">نمادهای اعتماد:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <textarea class="form-control" style="text-align:left" wire:model="enamad" type="text"></textarea>
+                                            <textarea class="form-control" style="text-align:left" wire:model.live="enamad" type="text"></textarea>
                                         </div>
                                     </div>
                                     <label style="font-weight:bold">اپلیکیشن موبایل:</label>
                                     <div class="form-group row">
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="linkApp1" type="text"
+                                            <input class="form-control" wire:model.live="linkApp1" type="text"
                                                 style="text-align:left" placeholder="لینک اپلیکیشن">
                                         </div>
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="imageApp1" type="text"
+                                            <input class="form-control" wire:model.live="imageApp1" type="text"
                                                 style="text-align:left" placeholder="تصویر">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="linkApp2" type="text"
+                                            <input class="form-control" wire:model.live="linkApp2" type="text"
                                                 style="text-align:left" placeholder="لینک اپلیکیشن">
                                         </div>
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="imageApp2" type="text"
+                                            <input class="form-control" wire:model.live="imageApp2" type="text"
                                                 style="text-align:left" placeholder="تصویر">
                                         </div>
                                     </div>

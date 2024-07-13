@@ -23,18 +23,18 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <label for="">عنوان محصول:</label>
-                                            <input class="form-control" wire:model="product.title" type="text">
+                                            <input class="form-control" wire:model.live="product.title" type="text">
                                         </div>
                                         <div class="col-6">
                                             <label for="">لینک محصول:</label>
-                                            <input class="form-control" wire:model="product.slug" type="text">
+                                            <input class="form-control" wire:model.live="product.slug" type="text">
                                         </div>
                                         <div class="col-4 mt-30">
                                             <div class="form-group">
                                                 <label for="">برچسب ها:</label>
                                                 <div wire:ignore>
                                                     <select class="form-control" multiple="multiple"
-                                                        wire:model.lazy="tags" id="tags"
+                                                        wire:model.blur="tags" id="tags"
                                                         style="width: 100%;">
                                                         @foreach (\App\Models\Admin\Products\Tag::all() as $tag)
                                                             <option value="{{ $tag->id }}">
@@ -50,7 +50,7 @@
                                             <div class="form-group">
                                                 <label for="">گارانتی:</label>
                                                 <div wire:ignore>
-                                                    <select class="form-control" wire:model.lazy="garanty_id"
+                                                    <select class="form-control" wire:model.blur="garanty_id"
                                                         id="garanty_id" style="width: 100%;">
                                                         <option value="">--انتخاب گارانتی--</option>
                                                         @foreach (\App\Models\Admin\Products\Garanty::all() as $garanty)
@@ -67,7 +67,7 @@
                                                 <label for="">رنگ ها:</label>
                                                 <div wire:ignore>
                                                     <select class="form-control" multiple="multiple"
-                                                        wire:model.lazy="colors" id="colors"
+                                                        wire:model.blur="colors" id="colors"
                                                         style="width: 100%;">
                                                         @foreach (\App\Models\Admin\Products\Color::all() as $color)
                                                             <option value="{{ $color->id }}" style="color:{{ $color->value }} !important">
@@ -85,7 +85,7 @@
                                             <div class="form-group">
                                                 <label for="exampleInputEmail12">دسته بندی سطح 1:</label>
                                                 <div wire:ignore>
-                                                    <select class="form-control" wire:model.lazy="level1_id"
+                                                    <select class="form-control" wire:model.blur="level1_id"
                                                         id="level1_id" style="width: 100%;">
                                                         <option value="">--انتخاب دسته بندی سطح 1--</option>
                                                         @foreach (\App\Models\Admin\Products\Category::where('level', 1)->where('isActive', 1)->get() as $category)
@@ -102,7 +102,7 @@
                                             <div class="form-group">
                                                 <label for="exampleInputEmail12">دسته بندی سطح 2:</label>
                                                 <div wire:ignore>
-                                                    <select class="form-control" wire:model.lazy="level2_id"
+                                                    <select class="form-control" wire:model.blur="level2_id"
                                                         id="level2_id" style="width: 100%;">
                                                         <option value="">--انتخاب دسته بندی سطح 2--</option>
                                                         @foreach (\App\Models\Admin\Products\Category::where('level', 2)->where('isActive', 1)->get() as $category)
@@ -119,7 +119,7 @@
                                             <div class="form-group">
                                                 <label for="exampleInputEmail12">دسته بندی سطح 3:</label>
                                                 <div wire:ignore>
-                                                    <select class="form-control" wire:model.lazy="level3_id"
+                                                    <select class="form-control" wire:model.blur="level3_id"
                                                         id="level3_id" style="width: 100%;">
                                                         <option value="">--انتخاب دسته بندی سطح 3--</option>
                                                         @foreach (\App\Models\Admin\Products\Category::where('level', 3)->where('isActive', 1)->get() as $category)
@@ -136,7 +136,7 @@
                                             <div class="form-group">
                                                 <label for="exampleInputEmail12">برند محصول:</label>
                                                 <div wire:ignore>
-                                                    <select class="form-control" wire:model.lazy="brand_id"
+                                                    <select class="form-control" wire:model.blur="brand_id"
                                                         id="brand_id" style="width: 100%;">
                                                         <option value="">--انتخاب برند محصول--</option>
                                                         @foreach (\App\Models\Admin\Products\Brand::where('isActive', 1)->get() as $brand)
@@ -151,44 +151,44 @@
                                     </div>
                                     <div class="row mt-30">
                                         <label for="">توضیحات کوتاه:</label>
-                                        <textarea wire:model="product.description" class="form-control" cols="30" rows="5"></textarea>
+                                        <textarea wire:model.live="product.description" class="form-control" cols="30" rows="5"></textarea>
                                     </div>
                                     <div class="row mt-30">
                                         <label for="">توضیحات کامل:</label>
-                                        <textarea wire:model="product.body" id="body" class="form-control" cols="30" rows="5"></textarea>
+                                        <textarea wire:model.live="product.body" id="body" class="form-control" cols="30" rows="5"></textarea>
                                     </div>
                                     <div class="row mt-30">
                                         <div class="col-3">
                                             <label for="">قیمت محصول:</label>
-                                            <input class="form-control" wire:model="product.price" type="text">
+                                            <input class="form-control" wire:model.live="product.price" type="text">
                                         </div>
                                         <div class="col-3">
                                             <label for="">قیمت با تخفیف:</label>
-                                            <input class="form-control" wire:model="product.discountPrice"
+                                            <input class="form-control" wire:model.live="product.discountPrice"
                                                 type="text">
                                         </div>
                                         <div class="col-3">
                                             <label for="">موجودی انبار:</label>
-                                            <input class="form-control" wire:model="product.number" type="text">
+                                            <input class="form-control" wire:model.live="product.number" type="text">
                                         </div>
                                         <div class="col-3">
                                             <label for="">وزن محصول:</label>
-                                            <input class="form-control" wire:model="product.weight" type="text">
+                                            <input class="form-control" wire:model.live="product.weight" type="text">
                                         </div>
                                         <div class="col-3">
                                             <label for="">حداکثر سفارش:</label>
-                                            <input class="form-control" wire:model="product.orderMax" type="text">
+                                            <input class="form-control" wire:model.live="product.orderMax" type="text">
                                         </div>
                                         <div class="col-3">
                                             <label for="">حداقل سفارش:</label>
-                                            <input class="form-control" wire:model="product.orderMin" type="text">
+                                            <input class="form-control" wire:model.live="product.orderMin" type="text">
                                         </div>
 
 
                                         <div class="col-3 mt-30">
                                             <div class="input-group cust-file-button mb-3">
                                                 <div class="custom-file">
-                                                    <input type="file" wire:model.lazy="image"
+                                                    <input type="file" wire:model.blur="image"
                                                         class="custom-file-input form-control" id="inputGroupFile03">
                                                     <label class="custom-file-label" for="inputGroupFile03">تصویر
                                                         محصول</label>
@@ -211,14 +211,14 @@
                                         </div>
                                         <div class="col-1 mt-30">
                                             <div class="checkbox checkbox-primary d-inline">
-                                                <input type="checkbox" wire:model="isActive" id="checkbox-p-1">
+                                                <input type="checkbox" wire:model.live="isActive" id="checkbox-p-1">
                                                 <label for="checkbox-p-1" class="cr">فعال</label>
                                             </div>
 
                                         </div>
                                         <div class="col-2 mt-30">
                                             <div class="checkbox checkbox-primary d-inline">
-                                                <input type="checkbox" wire:model="special" id="checkbox-p-2">
+                                                <input type="checkbox" wire:model.live="special" id="checkbox-p-2">
                                                 <label for="checkbox-p-2" class="cr">محصول ویژه</label>
                                             </div>
 

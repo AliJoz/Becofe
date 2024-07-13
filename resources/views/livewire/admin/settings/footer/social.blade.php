@@ -45,7 +45,7 @@
                                             <label class="col-form-label">آدرس فروشگاه:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="address" type="text">
+                                            <input class="form-control" wire:model.live="address" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -53,7 +53,7 @@
                                             <label class="col-form-label">آدرس ایمیل سایت:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="email" type="text">
+                                            <input class="form-control" wire:model.live="email" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -61,67 +61,67 @@
                                             <label class="col-form-label">شماره تماس فروشگاه:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="phone" type="text">
+                                            <input class="form-control" wire:model.live="phone" type="text">
                                         </div>
                                     </div>
                                     <label style="font-weight:bold">شبکه های اجتماعی</label>
                                     <div class="form-group row">
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialIcon1" type="text"
+                                            <input class="form-control" wire:model.live="socialIcon1" type="text"
                                                 style="text-align:left" placeholder="آیکون">
                                         </div>
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialLink1" type="text"
+                                            <input class="form-control" wire:model.live="socialLink1" type="text"
                                                 style="text-align:left" placeholder="لینک شبکه اجتماعی">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialIcon2" type="text"
+                                            <input class="form-control" wire:model.live="socialIcon2" type="text"
                                                 style="text-align:left" placeholder="آیکون">
                                         </div>
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialLink2" type="text"
+                                            <input class="form-control" wire:model.live="socialLink2" type="text"
                                                 style="text-align:left" placeholder="لینک شبکه اجتماعی">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialIcon3" type="text"
+                                            <input class="form-control" wire:model.live="socialIcon3" type="text"
                                                 style="text-align:left" placeholder="آیکون">
                                         </div>
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialLink3" type="text"
+                                            <input class="form-control" wire:model.live="socialLink3" type="text"
                                                 style="text-align:left" placeholder="لینک شبکه اجتماعی">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialIcon4" type="text"
+                                            <input class="form-control" wire:model.live="socialIcon4" type="text"
                                                 style="text-align:left" placeholder="آیکون">
                                         </div>
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialLink4" type="text"
+                                            <input class="form-control" wire:model.live="socialLink4" type="text"
                                                 style="text-align:left" placeholder="لینک شبکه اجتماعی">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialIcon5" type="text"
+                                            <input class="form-control" wire:model.live="socialIcon5" type="text"
                                                 style="text-align:left" placeholder="آیکون">
                                         </div>
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialLink5" type="text"
+                                            <input class="form-control" wire:model.live="socialLink5" type="text"
                                                 style="text-align:left" placeholder="لینک شبکه اجتماعی">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialIcon6" type="text"
+                                            <input class="form-control" wire:model.live="socialIcon6" type="text"
                                                 style="text-align:left" placeholder="آیکون">
                                         </div>
                                         <div class="col-lg-6">
-                                            <input class="form-control" wire:model="socialLink6" type="text"
+                                            <input class="form-control" wire:model.live="socialLink6" type="text"
                                                 style="text-align:left" placeholder="لینک شبکه اجتماعی">
                                         </div>
                                     </div>

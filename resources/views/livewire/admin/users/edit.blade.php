@@ -18,21 +18,21 @@
                                     <div class="row">
                                         <div class="col-3">
                                             <label for="">نام و نام خانوادگی:</label>
-                                            <input class="form-control" wire:model="user.name" type="text">
+                                            <input class="form-control" wire:model.live="user.name" type="text">
                                         </div>
                                         <div class="col-3">
                                             <label for="">موبایل:</label>
-                                            <input class="form-control" wire:model="user.mobile" type="text">
+                                            <input class="form-control" wire:model.live="user.mobile" type="text">
                                         </div>
                                         <div class="col-3">
                                             <label for="">پست الکترونیکی:</label>
-                                            <input class="form-control" wire:model="user.email" type="text">
+                                            <input class="form-control" wire:model.live="user.email" type="text">
                                         </div>
                                         <div class="col-3">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail12">
                                                     نوع کاربر:</label>
-                                                <select class="form-control" wire:model="user.typeUser"
+                                                <select class="form-control" wire:model.live="user.typeUser"
                                                     style="width: 100%;">
                                                     <option value="admin">مدیر
                                                     </option>
@@ -49,13 +49,13 @@
                                     <div class="row">
                                         <div class="col-3">
                                             <label for="">رمز عبور:</label>
-                                            <input class="form-control" wire:model="password" type="password">
+                                            <input class="form-control" wire:model.live="password" type="password">
                                         </div>
 
                                         <div class="col-3 mt-30">
                                             <div class="input-group cust-file-button mb-3">
                                                 <div class="custom-file">
-                                                    <input type="file" wire:model.lazy="profilePhoto"
+                                                    <input type="file" wire:model.blur="profilePhoto"
                                                         class="custom-file-input form-control" id="inputGroupFile03">
                                                     <label class="custom-file-label" for="inputGroupFile03">تصویر
                                                         پروفایل</label>

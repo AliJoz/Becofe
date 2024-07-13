@@ -21,19 +21,19 @@
 
                                             <div class="form-group">
                                                 <label for="exampleInputEmail111">عنوان دسترسی(لاتین):</label>
-                                                <input type="text" wire:model.lazy='permission.title' class="form-control"
+                                                <input type="text" wire:model.blur='permission.title' class="form-control"
                                                     id="exampleInputEmail111">
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputEmail12">توضیحات دسترسی(فارسی):</label>
-                                                <input type="text" wire:model.lazy='permission.description'
+                                                <input type="text" wire:model.blur='permission.description'
                                                     class="form-control" id="exampleInputEmail111">
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputEmail12">نقش ها:</label>
                                                 <div wire:ignore>
                                                     <select class="js-example-basic-single form-control" multiple="multiple"
-                                                        wire:model.lazy="roles" id="roles" style="width: 100%;">
+                                                        wire:model.blur="roles" id="roles" style="width: 100%;">
                                                         @foreach (\App\Models\Admin\Permissions\Role::all() as $role)
                                                             <option value="{{ $role->id }}">{{ $role->description }}
                                                             </option>
@@ -72,7 +72,7 @@
                                         style="float:left;margin-top:-37px;"><i class="fa fa-file-excel-o"></i> خروجی
                                         اکسل</button> --}}
                                     <hr>
-                                    <input wire:model="search" type="search" class="form-control mb-2 w-50 float-left"
+                                    <input wire:model.live="search" type="search" class="form-control mb-2 w-50 float-left"
                                         placeholder="جستجو...">
 
                                     <table id="datatable-buttons" class="table table-striped dt-responsive nowrap"

@@ -56,7 +56,7 @@
                                                                 style="float:left;margin-top:-37px;"><i
                                                                     class="fa fa-list-alt"></i> لیست لوگوهای فوتر</a>
                                                             <hr>
-                                                            <input wire:model="search" type="search"
+                                                            <input wire:model.live="search" type="search"
                                                                 class="form-control mb-2 w-50 float-left"
                                                                 placeholder="جستجو...">
 

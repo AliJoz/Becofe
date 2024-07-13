@@ -27,7 +27,7 @@
                                                 <label for="exampleInputEmail12">نقش ها:</label>
                                                 <div wire:ignore>
                                                     <select class="js-example-basic-single form-control"
-                                                        multiple="multiple" wire:model="roles" id="roles"
+                                                        multiple="multiple" wire:model.live="roles" id="roles"
                                                         style="width: 100%;">
                                                         @foreach (\App\Models\Admin\Permissions\Role::all() as $role)
                                                             <option value="{{ $role->id }}"
@@ -43,7 +43,7 @@
                                                 <label for="exampleInputEmail12">سطح دسترسی:</label>
                                                 <div wire:ignore>
                                                     <select class="js-example-basic-single form-control"
-                                                        multiple="multiple" wire:model="permissions"
+                                                        multiple="multiple" wire:model.live="permissions"
                                                         id="permissions" style="width: 100%;">
                                                         @foreach (\App\Models\Admin\Permissions\Permission::all() as $permission)
                                                             <option value="{{ $permission->id }}"

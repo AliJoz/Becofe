@@ -18,7 +18,7 @@
                                             @include('errors.error')
                                             <div class="form-group">
                                                 <label for="exampleInputEmail111">عنوان برند:</label>
-                                                <input type="text" wire:model.lazy='brand.title' class="form-control"
+                                                <input type="text" wire:model.blur='brand.title' class="form-control"
                                                     id="exampleInputEmail111">
                                             </div>
 
@@ -51,7 +51,7 @@
                                         style="float:left;margin-top:-37px;"><i class="fa fa-file-excel-o"></i> خروجی
                                         اکسل</button> --}}
                                     <hr>
-                                    <input wire:model="search" type="search" class="form-control mb-2 w-50 float-left"
+                                    <input wire:model.live="search" type="search" class="form-control mb-2 w-50 float-left"
                                         placeholder="جستجو...">
 
                                     <table id="datatable-buttons" class="table table-striped dt-responsive nowrap"

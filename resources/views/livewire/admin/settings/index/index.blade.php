@@ -59,13 +59,13 @@
                                                                         <div class="form-group">
                                                                             <label for="exampleInputEmail111">عنوان
                                                                                 اسلایدر:</label>
-                                                                            <input type="text" wire:model="slider.alt"
+                                                                            <input type="text" wire:model.live="slider.alt"
                                                                                 class="form-control"
                                                                                 id="exampleInputEmail111">
                                                                         </div>
                                                                         <div class="form-group">
                                                                             <label for="exampleInputEmail111">لینک:</label>
-                                                                            <input type="text" wire:model="slider.link"
+                                                                            <input type="text" wire:model.live="slider.link"
                                                                                 class="form-control"
                                                                                 id="exampleInputEmail111">
                                                                         </div>
@@ -73,7 +73,7 @@
                                                                             <label for="exampleInputEmail12">جایگاه
                                                                                 اسلایدر:</label>
                                                                             <select class="form-control"
-                                                                                wire:model="slider.position"
+                                                                                wire:model.live="slider.position"
                                                                                 style="width: 100%;">
                                                                                 <option value="">-- هیچکدام --
                                                                                 </option>
@@ -92,7 +92,7 @@
 
                                                                         <div class="input-group cust-file-button mb-3">
                                                                             <div class="custom-file">
-                                                                                <input type="file" wire:model="image"
+                                                                                <input type="file" wire:model.live="image"
                                                                                     class="custom-file-input form-control"
                                                                                     id="inputGroupFile03">
                                                                                 <label class="custom-file-label"
@@ -144,7 +144,7 @@
                                                                             {{ \App\Models\Admin\Settings\Footerlogo::onlyTrashed()->count() }}
                                                                         </span></a> --}}
                                                             <hr>
-                                                            <input wire:model="search" type="search"
+                                                            <input wire:model.live="search" type="search"
                                                                 class="form-control mb-2 w-50 float-left"
                                                                 placeholder="جستجو...">
 

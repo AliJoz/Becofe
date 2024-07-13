@@ -46,7 +46,7 @@
                                             <label class="col-form-label">متن برگشت به بالای سایت:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="upLabel" type="text">
+                                            <input class="form-control" wire:model.live="upLabel" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -54,7 +54,7 @@
                                             <label class="col-form-label">تیتر فوتر اول:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="widgetLabel1" type="text">
+                                            <input class="form-control" wire:model.live="widgetLabel1" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -62,7 +62,7 @@
                                             <label class="col-form-label">تیتر فوتر دوم:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="widgetLabel2" type="text">
+                                            <input class="form-control" wire:model.live="widgetLabel2" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -70,7 +70,7 @@
                                             <label class="col-form-label">تیتر فوتر سوم:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="widgetLabel3" type="text">
+                                            <input class="form-control" wire:model.live="widgetLabel3" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -78,7 +78,7 @@
                                             <label class="col-form-label">تیتر فوتر چهارم:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="widgetLabel4" type="text">
+                                            <input class="form-control" wire:model.live="widgetLabel4" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -86,7 +86,7 @@
                                             <label class="col-form-label">تیتر فوتر پنجم:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="widgetLabel5" type="text">
+                                            <input class="form-control" wire:model.live="widgetLabel5" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -94,7 +94,7 @@
                                             <label class="col-form-label">متن خبرنامه:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="rssLabel" type="text">
+                                            <input class="form-control" wire:model.live="rssLabel" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -102,7 +102,7 @@
                                             <label class="col-form-label">متن شبکه های اجتماعی:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="socialLabel" type="text">
+                                            <input class="form-control" wire:model.live="socialLabel" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -110,7 +110,7 @@
                                             <label class="col-form-label">متن پشتیبانی:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="supportLabel" type="text">
+                                            <input class="form-control" wire:model.live="supportLabel" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -118,7 +118,7 @@
                                             <label class="col-form-label">متن شماره تلفن:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="phoneLabel" type="text">
+                                            <input class="form-control" wire:model.live="phoneLabel" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -126,7 +126,7 @@
                                             <label class="col-form-label">متن آدرس ایمیل:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="emailLabel" type="text">
+                                            <input class="form-control" wire:model.live="emailLabel" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -134,7 +134,7 @@
                                             <label class="col-form-label">متن آدرس فروشگاه:</label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="addressLabel" type="text">
+                                            <input class="form-control" wire:model.live="addressLabel" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -142,7 +142,7 @@
                                             <label class="col-form-label">تیتر درباره فروشگاه: </label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="aboutHeadLabel" type="text">
+                                            <input class="form-control" wire:model.live="aboutHeadLabel" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -150,7 +150,7 @@
                                             <label class="col-form-label">متن درباره فروشگاه: </label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="aboutbodyLabel" type="text">
+                                            <input class="form-control" wire:model.live="aboutbodyLabel" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -158,7 +158,7 @@
                                             <label class="col-form-label">متن کپی رایت: </label>
                                         </div>
                                         <div class="col-lg-10">
-                                            <input class="form-control" wire:model="copyRight" type="text">
+                                            <input class="form-control" wire:model.live="copyRight" type="text">
                                         </div>
                                     </div>
                                     <button type="submit" wire:click="update()"

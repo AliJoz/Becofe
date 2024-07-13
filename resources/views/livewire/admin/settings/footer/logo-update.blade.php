@@ -58,13 +58,13 @@
                                                                     <div class="form-group">
                                                                         <label for="exampleInputEmail111">عنوان
                                                                             لوگو:</label>
-                                                                        <input type="text" wire:model="Footerlogo.title"
+                                                                        <input type="text" wire:model.live="Footerlogo.title"
                                                                             class="form-control"
                                                                             id="exampleInputEmail111">
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label for="exampleInputEmail111">لینک:</label>
-                                                                        <input type="text" wire:model="Footerlogo.url"
+                                                                        <input type="text" wire:model.live="Footerlogo.url"
                                                                             class="form-control"
                                                                             id="exampleInputEmail111">
                                                                     </div>
@@ -72,7 +72,7 @@
                                                                         <label for="exampleInputEmail12">جایگاه
                                                                             لوگو:</label>
                                                                         <select class="form-control"
-                                                                            wire:model="Footerlogo.type"
+                                                                            wire:model.live="Footerlogo.type"
                                                                             style="width: 100%;">
                                                                             <option value="">-- هیچکدام --</option>
                                                                             <option value="top">لوگوی بالای فوتر
@@ -83,7 +83,7 @@
                                                                     </div>
                                                                     <div class="input-group cust-file-button mb-3">
                                                                         <div class="custom-file">
-                                                                            <input type="file" wire:model.lazy="image"
+                                                                            <input type="file" wire:model.blur="image"
                                                                                 class="custom-file-input form-control"
                                                                                 id="inputGroupFile03">
                                                                             <label class="custom-file-label"
@@ -97,7 +97,7 @@
 
                                                                     <div class="checkbox checkbox-primary d-inline">
                                                                         <input type="checkbox"
-                                                                            wire:model="Footerlogo.isActive"
+                                                                            wire:model.live="Footerlogo.isActive"
                                                                             id="checkbox-p-1">
                                                                         <label for="checkbox-p-1"
                                                                             class="cr">فعال</label>
@@ -145,7 +145,7 @@
                                                                 style="float:left;margin-top:-37px;"><i
                                                                     class="fa fa-plus-square"></i> افزودن</a>
                                                             <hr>
-                                                            <input wire:model="search" type="search"
+                                                            <input wire:model.live="search" type="search"
                                                                 class="form-control mb-2 w-50 float-left"
                                                                 placeholder="جستجو...">
 

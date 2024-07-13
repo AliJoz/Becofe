@@ -27,17 +27,17 @@ class Lable extends Component
        $this->addresLable=$footer->addresLable;
        $this->phoneLable=$footer->phoneLable;
        $this->aboutbodyLable=$footer->aboutbodyLable;
-       return view('livewire.home.admin.settings.footer.lable',compact('footer'));
+
 
     }
-    // public function render()
-    // {
-    //     return view('livewire.home.admin.settings.footer.lable',compact('footer'));
-    // }
+    public function render()
+    {
+        return view('livewire.home.admin.settings.footer.lable');
+    }
     public function update(){
         $footer=Db::connection('mysql-setting')->table('footer')->limit(1);
-    $this->validate([
-//valid
+        $this->validate([
+        //valid
         'uplable'=>'required',
         'widerLable1'=>'required',
         'widerLable2'=>'required',
@@ -53,8 +53,8 @@ class Lable extends Component
         'addresLable'=>'required',
         'phoneLable'=>'required',
         'aboutbodyLable'=>'required',
-    ]);
-//update
+     ]);
+        //update
         $footer->update([
         'uplable'=>$this->uplable,
         'widerLable1'=>$this->widerLable1,
@@ -71,7 +71,11 @@ class Lable extends Component
         'addresLable'=>$this->addresLable,
         'phoneLable'=>$this->phoneLable,
         'aboutbodyLable'=>$this->aboutbodyLable
-]);
+            ]);
+
+        $this->dispatch('Toast','success', 'اطلاعات با موفقیت ویرایش شد');
+
+
 
     }
 

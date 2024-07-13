@@ -15,15 +15,15 @@
                                         @include('errors.error')
                                         <div class="form-group">
                                             <label for="exampleInputEmail111">عنوان ویژگی:</label>
-                                            <input type="text" wire:model.lazy='attribute.title' class="form-control"
+                                            <input type="text" wire:model.blur='attribute.title' class="form-control"
                                                 id="exampleInputEmail111">
                                         </div>
                                         <div class="checkbox checkbox-primary d-inline">
-                                            <input type="checkbox" wire:model="attribute.isActive" id="checkbox-p-1">
+                                            <input type="checkbox" wire:model.live="attribute.isActive" id="checkbox-p-1">
                                             <label for="checkbox-p-1" class="cr">فعال</label>
                                         </div>
                                         <div class="checkbox checkbox-primary d-inline">
-                                            <input type="checkbox" wire:model="attribute.isFilter" id="checkbox-p-2">
+                                            <input type="checkbox" wire:model.live="attribute.isFilter" id="checkbox-p-2">
                                             <label for="checkbox-p-2" class="cr">فیلتر باشد؟</label>
                                         </div>
 
@@ -53,7 +53,7 @@
                                     style="float:left;margin-top:-37px;"><i class="fa fa-plus-square"></i> افزودن</a>
 
                                 <hr>
-                                <input wire:model="search" type="search" class="form-control mb-2 w-50 float-left"
+                                <input wire:model.live="search" type="search" class="form-control mb-2 w-50 float-left"
                                     placeholder="جستجو...">
 
                                     <table id="datatable-buttons" class="table table-striped dt-responsive nowrap"

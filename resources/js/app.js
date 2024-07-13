@@ -45,7 +45,7 @@ togglebtn.forEach((btn) => {
     let icons = btn.querySelector(".icon-light");
     let changeIcon = document.querySelectorAll(".icon-light");
     let c = document.querySelector(".changeName");
-   
+
 
     if (localStorage.theme === "dark") {
       document.documentElement.classList.remove("dark");
@@ -118,3 +118,22 @@ Mmeno.addEventListener("click", () => {
     downarrow.setAttribute("href", "#down");
   }
 });
+//swett artert2
+import Swal from 'sweetalert2'
+
+const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    }
+  });
+  Toast.fire({
+    icon: "success",
+    title: "Signed in successfully"
+  });
+///

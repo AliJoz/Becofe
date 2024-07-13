@@ -21,19 +21,19 @@
                                             @include('errors.error')
                                             <div class="form-group">
                                                 <label for="exampleInputEmail111">عنوان نقش(لاتین):</label>
-                                                <input type="text" wire:model.lazy='role.title' class="form-control"
+                                                <input type="text" wire:model.blur='role.title' class="form-control"
                                                     id="exampleInputEmail111">
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputEmail12">توضیحات نقش(فارسی):</label>
-                                                <input type="text" wire:model.lazy='role.description' class="form-control"
+                                                <input type="text" wire:model.blur='role.description' class="form-control"
                                                     id="exampleInputEmail111">
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputEmail12">سطح دسترسی ها:</label>
                                                 <div wire:ignore>
                                                     <select class="form-control" multiple="multiple"
-                                                        wire:model.lazy="permissions" id="permissions" style="width: 100%;">
+                                                        wire:model.blur="permissions" id="permissions" style="width: 100%;">
                                                         @foreach (\App\Models\Admin\Permissions\Permission::all() as $permission)
                                                             <option value="{{ $permission->id }}">
                                                                 {{ $permission->description }}
@@ -71,7 +71,7 @@
                                         style="float:left;margin-top:-37px;"><i class="fa fa-file-excel-o"></i> خروجی
                                         اکسل</button> --}}
                                     <hr>
-                                    <input wire:model="search" type="search" class="form-control mb-2 w-50 float-left"
+                                    <input wire:model.live="search" type="search" class="form-control mb-2 w-50 float-left"
                                         placeholder="جستجو...">
 
                                     <table id="datatable-buttons" class="table table-striped dt-responsive nowrap"

@@ -17,11 +17,11 @@
                                             @include('errors.error')
                                             <div class="form-group">
                                                 <label for="exampleInputEmail111">عنوان ویژگی:</label>
-                                                <input type="text" wire:model.lazy='attribute.title' class="form-control"
+                                                <input type="text" wire:model.blur='attribute.title' class="form-control"
                                                     id="exampleInputEmail111">
                                             </div>
                                             <div class="checkbox checkbox-primary d-inline">
-                                                <input type="checkbox" wire:model="attribute.isFilter" id="checkbox-p-1">
+                                                <input type="checkbox" wire:model.live="attribute.isFilter" id="checkbox-p-1">
                                                 <label for="checkbox-p-1" class="cr">فیلتر باشد؟</label>
                                             </div>
 
@@ -55,7 +55,7 @@
                                         style="float:left;margin-top:-37px;"><i class="fa fa-file-excel-o"></i> خروجی
                                         اکسل</button> --}}
                                     <hr>
-                                    <input wire:model="search" type="search" class="form-control mb-2 w-50 float-left"
+                                    <input wire:model.live="search" type="search" class="form-control mb-2 w-50 float-left"
                                         placeholder="جستجو...">
 
                                     <table id="datatable-buttons" class="table table-striped dt-responsive nowrap"
