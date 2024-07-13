@@ -8,8 +8,9 @@ class Lable extends Component
 {
     public $uplable,$widerLable1,$widerLable2,$widerLable3,$widerLable4,$widerLable5,$soctaiLable,$rrsLable,$suppirtLable,$emailLable,$aboutHeadLable,$addresLable,$copyright,$phoneLable,$aboutbodyLable;
 
-    public function render()
+    public function __construct()
     {
+
         $footer=DB::connection('mysql-setting')->table('footer')->first();
        $this->uplable=$footer->uplable;
        $this->widerLable1=$footer->widerLable1;
@@ -26,11 +27,15 @@ class Lable extends Component
        $this->addresLable=$footer->addresLable;
        $this->phoneLable=$footer->phoneLable;
        $this->aboutbodyLable=$footer->aboutbodyLable;
+       return view('livewire.home.admin.settings.footer.lable',compact('footer'));
 
-        return view('livewire.home.admin.settings.footer.lable',compact('footer'));
     }
+    // public function render()
+    // {
+    //     return view('livewire.home.admin.settings.footer.lable',compact('footer'));
+    // }
     public function update(){
-        $footer=Db::connection('mysql-setting')->table('footer')->first();
+        $footer=Db::connection('mysql-setting')->table('footer')->limit(1);
     $this->validate([
 //valid
         'uplable'=>'required',
@@ -51,21 +56,21 @@ class Lable extends Component
     ]);
 //update
         $footer->update([
-        'uplable'=>'required',
-        'widerLable1'=>'required',
-        'widerLable2'=>'required',
-        'widerLable3'=>'required',
-        'widerLable4'=>'required',
-        'widerLable5'=>'required',
-        'soctaiLable'=>'required',
-        'rrsLable'=>'required',
-        'suppirtLable'=>'required',
-        'emailLable'=>'required',
-        'aboutHeadLable'=>'required',
-        'copyright'=>'required',
-        'addresLable'=>'required',
-        'phoneLable'=>'required',
-        'aboutbodyLable'=>'required',
+        'uplable'=>$this->uplable,
+        'widerLable1'=>$this->widerLable1,
+        'widerLable2'=>$this->widerLable2,
+        'widerLable3'=>$this->widerLable3,
+        'widerLable4'=>$this->widerLable4,
+        'widerLable5'=>$this->widerLable5,
+        'soctaiLable'=>$this->soctaiLable,
+        'rrsLable'=>$this->rrsLable,
+        'suppirtLable'=>$this->suppirtLable,
+        'emailLable'=>$this->emailLable,
+        'aboutHeadLable'=>$this->aboutHeadLable,
+        'copyright'=>$this->copyright,
+        'addresLable'=>$this->addresLable,
+        'phoneLable'=>$this->phoneLable,
+        'aboutbodyLable'=>$this->aboutbodyLable
 ]);
 
     }

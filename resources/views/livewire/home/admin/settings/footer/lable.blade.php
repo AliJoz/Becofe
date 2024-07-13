@@ -179,7 +179,7 @@
                                             <input class="form-control" wire:model="uplable"  type="text">
                                         </div>
                                     </div>
-                                    <button type="submit" wire:click="update()" class="btn btn-outline-success mb-2 mr-2" style="float:left;"><i class="fa fa-save"></i> ذخیره</button>
+                                    <button type="submit" wire:click="update()" class="btn btn-outline-success mb-2 mr-2   "  style="float:left; "><i class="fa fa-save"></i> ذخیره</button>
                                 </div>
                             </div>
                         </div>
