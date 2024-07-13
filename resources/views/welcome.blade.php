@@ -23,7 +23,7 @@
               <livewire:home.categori>
               <livewire:home.profitable>
               <livewire:home.matlab>
-
+              <livewire:home.layouts.footer>
 
 
        @livewireScripts
