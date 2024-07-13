@@ -18,10 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', App\Livewire\Admin\Home\Index::class)->name('admin.home');
 
 
-Route::get('/home',App\Livewire\Home\Home\Index::class)->name('admin.home');
+//Route::get('/',App\Livewire\Home\Home\Index::class);
+//Route::get('/admin/home',App\Livewire\Home\Home\Index::class)->name('admin.home');
 // //---------------------------------------Settings---------------------------------------//
 // //Settings Footer ETC
-Route::get('/settings/footer', App\Livewire\Home\Admin\Settings\Footer\Lable::class)->name('admin.settings.footer');
+Route::get('/settings/footer/label', App\Livewire\Home\Admin\Settings\Footer\Lable::class)->name('admin.settings.footer.label');
 // //Settings Slider Index
 // Route::get('/settings/sliders', App\Http\Livewire\Admin\Settings\Index\Index::class)->name('admin.settings.sliders');
 // //Settings Footer ETC

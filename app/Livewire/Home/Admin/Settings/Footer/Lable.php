@@ -10,6 +10,6 @@ class Lable extends Component
     {
         $footer=DB::connection('mysql-setting')->table('footer')->get();
         $footer = $footer[0];
-        return view('livewire.home.admin.settings.footer.lable');
+        return view('livewire.home.admin.settings.footer.lable',compact('footer'));
     }
 }

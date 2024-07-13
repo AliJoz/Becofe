@@ -5,7 +5,7 @@
                 <div class="col-lg-8 col-md-8 col-xs-12 pull-right">
                     <div class="header-right">
                         <div class="logo">
-                            <a href="{{ route('home') }}"><img src="{{ asset('home/images/logo.png') }}"
+                            <a href="{{ route('home') }} class='active'"><img src="{{ asset('home/images/logo.png') }}"
                                     alt="logo"></a>
                         </div>
 
