@@ -1,4 +1,5 @@
 @section('title','برچسب های فوتر')
+
 <div>
     <div class="container-fluid">
         <div class="inbox-area">

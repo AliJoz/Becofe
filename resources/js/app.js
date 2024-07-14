@@ -1,7 +1,10 @@
 import "./bootstrap";
 
+import Swal from "sweetalert2";
+
 // import Swiper JS
 import Swiper from "swiper";
+
 // import Swiper styles
 import "swiper/css";
 
@@ -68,14 +71,14 @@ let blur = document.getElementById("overlay");
 let meno = document.querySelector("#submeno");
 let submenu = document.querySelector(".hambergermeno");
 
-submenu.addEventListener("click", function () {
+submenu?.addEventListener("click", function () {
     meno.classList.remove("hidden");
     meno.classList.add("menos");
 
     blur.classList.add("overlay");
 });
 
-btnclose.addEventListener("click", () => {
+btnclose?.addEventListener("click", () => {
     meno.classList.remove("menos");
     meno.classList.add("hidden");
     blur.classList.remove("overlay");
@@ -83,14 +86,14 @@ btnclose.addEventListener("click", () => {
 ///
 let close = document.getElementById("closebtn");
 let shopping = document.getElementById("shopping");
-shopping.addEventListener("click", function () {
+shopping?.addEventListener("click", function () {
     close.classList.remove("hidden");
     close.classList.add("menosShop");
 
     blur.classList.add("overlay");
 });
 let btnclosed = document.querySelector(".closed");
-btnclosed.addEventListener("click", () => {
+btnclosed?.addEventListener("click", () => {
     close.classList.remove("menosShop");
     close.classList.add("hidden");
     blur.classList.remove("overlay");
@@ -100,7 +103,7 @@ let openmeno = document.getElementById("Menosub");
 let Mmeno = document.getElementById("MMeno");
 let downarrow = document.querySelector(".up");
 
-Mmeno.addEventListener("click", () => {
+Mmeno?.addEventListener("click", () => {
     openmeno.classList.toggle("hidden");
     openmeno.classList.toggle("subopenmeno");
 
@@ -111,25 +114,18 @@ Mmeno.addEventListener("click", () => {
         downarrow.setAttribute("href", "#down");
     }
 });
+
 //swett artert2
-import Swal from "sweetalert2";
 
+window.addEventListener("alert", (event) => {
+    let data = event.detail;
+    console.log(data);
+    Swal.fire({
+        position: "center",
+        icon: data.type,
+        title: data.title,
+        timer: 8000,
+        showConfirmButton: false,
 
-
-
-const Toast = Swal.mixin({
-    toast: true,
-    position: "top-end",
-    showConfirmButton: false,
-    timer: 3000,
-    timerProgressBar: true,
-    didOpen: (toast) => {
-      toast.onmouseenter = Swal.stopTimer;
-      toast.onmouseleave = Swal.resumeTimer;
-    }
-  });
-  Toast.fire({
-    icon: "success",
-    title: "Signed in successfully"
-  });
-///
+    });
+});
