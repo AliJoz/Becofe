@@ -577,7 +577,7 @@
       >
         <!-- Hamburger menu -->
         <use href="#menu"></use>
-        <div id="submeno" class="hidden">
+        <div id="submeno" class="menos">
           <!-- First div hamburger -->
           <div
             class="flex justify-between p-5 relative border-b border-gray-500 dark:border-b-white/50 pb-5 mb-5"

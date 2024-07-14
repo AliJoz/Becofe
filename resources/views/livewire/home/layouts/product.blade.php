@@ -1,4 +1,4 @@
-<meta charset="UTF-8">
+{{-- <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--    font-->
 <link rel="stylesheet" href="{{ asset('home/css/font-awesome.min.css') }}">
@@ -1077,4 +1077,4 @@
 <script src="{{ asset('home/js/jquery.ez-plus.js') }}"></script>
 <script src="{{ asset('home/js/theia-sticky-sidebar.min.js') }}"></script>
 
-@yield('scripts')
+@yield('scripts') --}}

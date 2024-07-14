@@ -1,4 +1,4 @@
-<div>
+{{-- <div>
     <header class="header-main-page">
         <div class="d-block">
             <div>
@@ -889,4 +889,4 @@
     <div class="nav-categories-overlay"></div>
     <div class="overlay-search-box"></div>
 
-</div>
+</div> --}}

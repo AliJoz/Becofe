@@ -375,41 +375,42 @@ footer .copy-right-footer p {
 
     /* endfooter */
     .overlay {
-      @apply fixed inset-0 w-full h-full bg-black/40 z-10;
-    }
-    .menos {
-      /* @apply scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100 overflow-y-auto scrollbar-thin  top-0 right-0 w-64  min-h-screen bg-white flex-col fixed z-20 dark:bg-zinc-700 dark:text-white; */
-    }
-    .menosShop {
-      @apply top-0 left-0 w-64  min-h-screen bg-white flex-col fixed z-20 dark:bg-zinc-700 dark:text-white;
-    }
+        @apply fixed inset-0 w-full h-full bg-black/40 z-10;
+      }
+      .menos {
+        @apply scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100 overflow-y-auto scrollbar-thin  top-0 right-0 w-64  min-h-screen bg-white flex-col fixed z-20 dark:bg-zinc-700 dark:text-white;
+      }
+      .menosShop {
+        @apply top-0 left-0 w-64  min-h-screen bg-white flex-col fixed z-20 dark:bg-zinc-700 dark:text-white;
+      }
 
-    .subopenmeno {
-      @apply flex flex-col font-iran-Med  p-5 opacity-100  bg-white dark:bg-zinc-700   dark:text-white text-zinc-700 text-sm tracking-normal space-y-4 transition-all child:inline-block font-normal  child-hover:text-orange-300 top-full delay-75 pr-3;
-    }
+      .subopenmeno {
+        @apply flex flex-col font-dana-Med  p-5 opacity-100  bg-white dark:bg-zinc-700   dark:text-white text-zinc-700 text-sm tracking-normal space-y-4 transition-all child:inline-block font-normal  child-hover:text-orange-300 top-full delay-75 pr-3;
+      }
 
-    .subMenu::after {
-      content: " ";
-      display: block;
-      width: 4px;
-      height: 4px;
-      border-radius: 100px;
-      background-color: #fdba74;
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: -6px;
-      margin: auto;
-    }
-    .subMenu {
-      padding-right: 10px;
-      position: relative;
-      color: #fdba74;
-    }
-    .dir {
-      direction: ltr;
-      /* @apply flex  overflow-y-auto scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100  scrollbar-thin; */
-    }
+      .subMenu::after {
+        content: " ";
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 100px;
+        background-color: #fdba74;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: -6px;
+        margin: auto;
+      }
+      .subMenu {
+        padding-right: 10px;
+        position: relative;
+        color: #fdba74;
+      }
+      .dir {
+        direction: ltr;
+        @apply flex  overflow-y-auto scrollbar-track-gray-800 scrollbar-thumb-red-400 dark:scrollbar-thumb-zinc-100  scrollbar-thin;
+      }
+
 
     .button,
     .input {
