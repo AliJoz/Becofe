@@ -74,9 +74,8 @@ class Lable extends Component
             ]);
 
         $this->dispatch('Toast','success', 'اطلاعات با موفقیت ویرایش شد');
-
-
-
+        
     }
+
 
 }
