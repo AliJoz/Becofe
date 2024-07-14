@@ -12,13 +12,15 @@
                                         <div class="file-manager clearfix">
                                             <!-- Title -->
                                             <ul class="folder-list">
-                                                <li class="{{ route('admin.settings.footer.label') ? 'active' : '' }}"><a href="{{ route('admin.settings.footer.label') }}"> <i class="fa fa-file-text-o"></i>برچسب ها </a></li>
+                                                {{-- <li class="{{ route('admin.settings.footer.label') ? 'active' : '' }}"><a href="{{ route('admin.settings.footer.label') }}"> <i class="fa fa-file-text-o"></i>برچسب ها </a></li>
                                                 <li><a href="#"> <i class="ti-share"></i> ارسال پست الکترونیکی</a></li>
                                                 <li><a href="#"> <i class="fa fa-certificate"></i> مهم</a></li>
                                                 <li><a href="#"> <i class="fa fa-file-text-o"></i>پیش نویس <span class="badge badge-pill badge-warning inbox ml-2">3</span></a></li>
-                                                <li><a href="#"> <i class="fa fa-trash-o"></i>سطل زباله <span class="badge badge-pill badge-danger inbox ml-2">4</span></a></li>
+                                                <li><a href="#"> <i class="fa fa-trash-o"></i>سطل زباله <span class="badge badge-pill badge-danger inbox ml-2">4</span></a></li> --}}
+                                                <li class="active"><a href="{{ route('admin.settings.footer.label') }}"> برچسب ها </a></li>
+                                                <li><a href="{{ route('admin.settings.footer.social') }}"> شبکه های اجتماعی </a></li>
                                             </ul>
-                                            <!-- Title -->
+                                            {{-- <!-- Title -->
                                             <div class="categori-title mt-30">
                                                 <h6 class="mb-3 primary-color-text">برچسب ها</h6>
                                             </div>
@@ -28,7 +30,7 @@
                                                 <li><a href="#"> <i class="fa fa-circle text-danger"></i> مهم</a></li>
                                                 <li><a href="#"> <i class="fa fa-circle text-primary"></i> اجتماعی</a></li>
                                                 <li><a href="#"> <i class="fa fa-circle text-info"></i> دیگر</a></li>
-                                            </ul>
+                                            </ul> --}}
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
@@ -131,54 +133,7 @@
                                             <input class="form-control" wire:model.live="addresLable"  type="text">
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-2">
-                                            <label class="col-form-label">متن </label>
-                                        </div>
-                                        <div class="col-lg-10">
-                                            <input class="form-control" wire:model.live="uplable"  type="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-2">
-                                            <label class="col-form-label">متن </label>
-                                        </div>
-                                        <div class="col-lg-10">
-                                            <input class="form-control" wire:model.live="uplable" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-2">
-                                            <label class="col-form-label">متن </label>
-                                        </div>
-                                        <div class="col-lg-10">
-                                            <input class="form-control" wire:model.live="uplable"  type="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-2">
-                                            <label class="col-form-label">متن </label>
-                                        </div>
-                                        <div class="col-lg-10">
-                                            <input class="form-control" wire:model.live="uplable"  type="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-2">
-                                            <label class="col-form-label">متن </label>
-                                        </div>
-                                        <div class="col-lg-10">
-                                            <input class="form-control" wire:model.live="uplable"  type="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-lg-2">
-                                            <label class="col-form-label">متن </label>
-                                        </div>
-                                        <div class="col-lg-10">
-                                            <input class="form-control" wire:model.live="uplable"  type="text">
-                                        </div>
-                                    </div>
+
                                     <button type="submit" wire:click="update()" class="btn btn-outline-success mb-2 mr-2   "  style="float:left; "><i class="fa fa-save"></i> ذخیره</button>
                                 </div>
                             </div>

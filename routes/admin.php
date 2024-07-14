@@ -23,11 +23,11 @@ Route::get('/', App\Livewire\Admin\Home\Index::class)->name('admin.home');
 // //---------------------------------------Settings---------------------------------------//
 // //Settings Footer ETC
 Route::get('/settings/footer/label', App\Livewire\Home\Admin\Settings\Footer\Lable::class)->name('admin.settings.footer.label');
+Route::get('/settings/footer/social', App\Livewire\Home\Admin\Settings\Footer\Social::class)->name('admin.settings.footer.social');
 // //Settings Slider Index
 // Route::get('/settings/sliders', App\Http\Livewire\Admin\Settings\Index\Index::class)->name('admin.settings.sliders');
 // //Settings Footer ETC
-// Route::get('/settings/footer/label', App\Http\Livewire\Admin\Settings\Footer\Label::class)->name('admin.settings.footer.label');
-// Route::get('/settings/footer/socialmedia', App\Http\Livewire\Admin\Settings\Footer\Social::class)->name('admin.settings.footer.social');
+
 // //Settings Footer LOGO
 // Route::get('/settings/footer/logo', App\Http\Livewire\Admin\Settings\Footer\Logo::class)->name('admin.settings.footer.logo');
 // Route::get('/settings/footer/logo/{Footerlogo}', App\Http\Livewire\Admin\Settings\Footer\LogoUpdate::class)->name('admin.settings.footer.logo.update');

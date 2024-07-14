@@ -27,6 +27,8 @@ class Lable extends Component
        $this->addresLable=$footer->addresLable;
        $this->phoneLable=$footer->phoneLable;
        $this->aboutbodyLable=$footer->aboutbodyLable;
+       //
+       
 
 
     }
@@ -74,7 +76,7 @@ class Lable extends Component
             ]);
 
         $this->dispatch('Toast','success', 'اطلاعات با موفقیت ویرایش شد');
-        
+
     }
 
 

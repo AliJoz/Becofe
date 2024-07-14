@@ -33,7 +33,18 @@ class Footersetingseeder extends Seeder
             'phone' => '09191713064',
             'email' => 'Becofe@gmail.com',
             'address' => 'قم ',
-
+            'socialIcon1' => 'fa fa-instagram',
+            'socialIcon2' => 'fa fa-twitter',
+            'socialIcon3' => 'fa fa-facebook',
+            'socialIcon4' => 'fa fa-linkedin-square',
+            'socialIcon5' => '',
+            'socialIcon6' => '',
+            'socialLink1' => '#',
+            'socialLink2' => '#',
+            'socialLink3' => '#',
+            'socialLink4' => '#',
+            'socialLink5' => '#',
+            'socialLink6' => '#',
         ]);
      }
 
