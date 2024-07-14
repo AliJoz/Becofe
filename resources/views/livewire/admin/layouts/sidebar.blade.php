@@ -389,7 +389,7 @@
                             <!-- تنظیمات فوتر-برچسب ها-تنظیمات عمومی(لوگو و ...) -  -->
                             <li><a {{ Request::routeIs(['admin.settings.footer.label','admin.settings.footer.social']) ? "style=color:#54c6d0" : '' }} href="{{ route('admin.settings.footer.label') }}">تنظیمات فوتر</a></li>
                             <!-- استان و شهر و ... -  -->
-                            <li><a href="#">تنظیمات فروشگاه</a></li>
+                            <li><a href="{{ route('admin.settings.footer.social') }}">تنظیمات فروشگاه</a></li>
                         </ul>
                     </li>
                     {{-- <li><a href="#"><i class="zmdi zmdi-cloud-done"></i><span>بکاپ گیری</span></a></li> --}}

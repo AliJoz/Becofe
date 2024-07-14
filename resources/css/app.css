@@ -323,6 +323,9 @@ footer .footer-address .address-images {
     height: 65px;
     float: left;
     line-height: 63px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 footer .footer-address .address-images img {
@@ -510,4 +513,3 @@ footer .copy-right-footer p {
   }
 
 
-  

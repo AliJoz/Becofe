@@ -128,14 +128,14 @@
                 <div class="footer-contact">
                     <ul>
                         <li>{{$footer->soctaiLable}} </li>
-                        <li style="float:right">{{ $footer->phoneLabel }}{{ $footer->phone }}</li>
-                                <li class="email-title">{{ $footer->emailLabel }}<a href="mailto:{{ $footer->email }}">{{ $footer->email }}</a></li>
-                                <li class="email-title">{{ $footer->addressLabel }}{{ $footer->address }}
+                        <li style="float:right">{{ $footer->phoneLable }}{{ $footer->phone }}</li>
+                                <li class="email-title">{{ $footer->emailLable }}<a href="mailto:{{ $footer->email }}">{{ $footer->email }}</a></li>
+                                <li class="email-title">{{ $footer->addresLable }}{{ $footer->address }}
                             </ul>
                 </div>
 
                 <div class="address-images">
-                    <a href="#">
+                    <a href="#" class="bazarImg py-2">
                         <img src="{{ asset('home/images/footer-img/1090a120.png') }}" alt="address">
                         <img src="{{ asset('home/images/footer-img/71abe5c9.png') }}" alt="address">
                     </a>
