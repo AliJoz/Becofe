@@ -30,8 +30,6 @@ return new class extends Migration
             $table->text('copyright')->nullable();
 
 
-
-
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
             $table->string('address')->nullable();
@@ -50,11 +48,13 @@ return new class extends Migration
             $table->string('socialLink6')->nullable();
             $table->timestamps();
         });
-        Schema::connection('mysql-settings')->create('footer-logos', function (Blueprint $table) {
+
+        Schema::connection('mysql-setting')->create('footer-logos', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
-            $table->string('image');
-            $table->enum('type',['top','bottom']);
+            $table->string('image')->nullable();
+            $table->string('url')->nullable();
+            $table->enum('type', ['top', 'bottom']);
             $table->boolean('isActive')->nullable();
             $table->softDeletes();
             $table->timestamps();
@@ -68,6 +68,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::connection('mysql-setting')->dropIfExists('footer');
-        Schema::connection('mysql-setting')->dropIfExists('footer-logos');
+
+         Schema::connection('mysql-setting')->dropIfExists('footer-logos');
     }
 };

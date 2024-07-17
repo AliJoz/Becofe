@@ -41,7 +41,7 @@ class Social extends Component
 
     public function update()
     {
-        $footer = DB::connection('mysql-setting')->table('footers')->limit(1);
+        $footer = DB::connection('mysql-setting')->table('footer')->limit(1);
 
         //Update
         $footer->update([
@@ -62,7 +62,8 @@ class Social extends Component
             'socialLink6'  => $this->socialLink6
         ]);
 
-        $this->emit('toast', 'success', 'اطلاعات با موفقیت ویرایش شد');
+        $this->dispatch('alert',type:'success',title:'عملیات با موفقیت فوتر انجام شد');
+
 
     }
 
