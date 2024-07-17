@@ -10,7 +10,7 @@ use Hekmatinasser\Verta\Verta;
 class Log extends Model
 {
     use HasFactory;
-    protected $connection = "mysql-settings";
+    protected $connection = "mysql-setting";
 
     protected $fillable = ['user_id', 'ip', 'actionType', 'description'];
 

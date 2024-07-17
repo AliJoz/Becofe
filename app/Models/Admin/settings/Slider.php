@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Slider extends Model
 {
     use HasFactory;
-    protected $connection = "mysql-settings";
+    protected $connection = "mysql-setting";
     protected $fillable = ['alt','image','link','position'];
-    
+
 }

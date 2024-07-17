@@ -1,5 +1,5 @@
 <div>
-    <svg class="hidden">
+    {{-- <svg class="hidden">
         <symbol
           id="shopping-cart"
           xmlns="http://www.w3.org/2000/svg"
@@ -419,7 +419,7 @@
             />
           </svg>
         </symbol>
-    </svg>
+    </svg> --}}
 
         <section
         class="Home bg-HomeMobail relative xs:h-auto xs:aspect-[2/1] md:aspect-auto md:bg-HomeDesktop bg-no-repeat bg-cover bg-center-top"

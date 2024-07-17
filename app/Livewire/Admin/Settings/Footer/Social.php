@@ -19,7 +19,7 @@ class Social extends Component
 
     public function __construct()
     {
-       $footer = DB::connection('mysql-settings')->table('footers')->first();
+       $footer = DB::connection('mysql-setting')->table('footers')->first();
 
        //Variable Value
        $this->address     = $footer->address;

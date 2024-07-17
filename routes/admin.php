@@ -18,27 +18,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', App\Livewire\Admin\Home\Index::class)->name('admin.home');
 
 
-//Route::get('/',App\Livewire\Home\Home\Index::class);
-//Route::get('/admin/home',App\Livewire\Home\Home\Index::class)->name('admin.home');
 // //---------------------------------------Settings---------------------------------------//
 // //Settings Footer ETC
 Route::get('/settings/footer/label', App\Livewire\Home\Admin\Settings\Footer\Lable::class)->name('admin.settings.footer.label');
 Route::get('/settings/footer/social', App\Livewire\Home\Admin\Settings\Footer\Social::class)->name('admin.settings.footer.social');
-// //Settings Slider Index
-// Route::get('/settings/sliders', App\Http\Livewire\Admin\Settings\Index\Index::class)->name('admin.settings.sliders');
-// //Settings Footer ETC
 
-// //Settings Footer LOGO
-// Route::get('/settings/footer/logo', App\Http\Livewire\Admin\Settings\Footer\Logo::class)->name('admin.settings.footer.logo');
-// Route::get('/settings/footer/logo/{Footerlogo}', App\Http\Livewire\Admin\Settings\Footer\LogoUpdate::class)->name('admin.settings.footer.logo.update');
-// Route::get('/settings/footer/trashed/logo', App\Http\Livewire\Admin\Settings\Footer\LogoTrash::class)->name('admin.settings.footer.logo.trash');
-// //Settings Footer MENU
-// Route::get('/settings/footer/menu', App\Http\Livewire\Admin\Settings\Footer\Menu::class)->name('admin.settings.footer.menu');
-// Route::get('/settings/footer/menu/{Footermenu}', App\Http\Livewire\Admin\Settings\Footer\menuUpdate::class)->name('admin.settings.footer.menu.update');
-// //Settings Footer Enamad
-// Route::get('/settings/footer/namad', App\Http\Livewire\Admin\Settings\Footer\Namad::class)->name('admin.settings.footer.namad');
-// //Settings Index Page
-// Route::get('/settings/index', App\Http\Livewire\Admin\Settings\Index\Index::class)->name('admin.settings.index');
+Route::get('/settings/footer/logo', App\Livewire\Home\Admin\Settings\Footer\Logo::class)->name('admin.settings.footer.logo');
+
 
 // //------------------------------------------Logs--------------------------------------------//
 // Route::get('/logs', App\Http\Livewire\Admin\Logs\Index::class)->name('admin.logs');

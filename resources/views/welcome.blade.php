@@ -11,13 +11,13 @@
         @vite([
             'resources/css/app.css',
             'resources/js/app.js'
-            
+
         ])
 
         @livewireStyles
     </head>
     <body class="bg-gray-100 dark:bg-zinc-800  ">
-
+        <livewire:home.icons>
         <livewire:home.header>
             <livewire:home.prodact>
             <livewire:home.categori-both>

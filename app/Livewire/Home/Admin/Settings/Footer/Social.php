@@ -41,7 +41,7 @@ class Social extends Component
 
     public function update()
     {
-        $footer = DB::connection('mysql-settings')->table('footers')->limit(1);
+        $footer = DB::connection('mysql-setting')->table('footers')->limit(1);
 
         //Update
         $footer->update([

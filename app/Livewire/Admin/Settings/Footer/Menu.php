@@ -57,7 +57,7 @@ class Menu extends Component
 
         $menus = $this->readyToLoad ? Footermenu::where('title', 'LIKE', '%' . $this->search . '%')->latest()->paginate(5) : [];
 
-        $footer = DB::connection('mysql-settings')->table('footers')->first();
+        $footer = DB::connection('mysql-setting')->table('footers')->first();
 
         $headerMenu[] = $footer->widgetLabel1;
         $headerMenu[] = $footer->widgetLabel2;
