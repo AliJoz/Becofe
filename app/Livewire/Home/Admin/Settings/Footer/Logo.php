@@ -11,6 +11,7 @@ class Logo extends Component
     public $type;
     public $isActive;
     public $image;
+    public $readyToLoad = false;
     //public object $footerLogo;
     use WithFileUploads;
     // public function mount(){
@@ -65,6 +66,40 @@ class Logo extends Component
 
     public function render()
     {
-        return view('livewire.home.admin.settings.footer.logo');
+        $logos = Footerlogo::all();
+        return view('livewire.home.admin.settings.footer.logo',compact('logos'));
     }
-}
+
+
+    public function loadLogo(){
+        $this->readyToLoad = true;
+    }
+
+    public function changeStatus($id){
+        $logo = Footerlogo::find($id);
+        if($logo->isActive == 1){
+            $logo->update([
+                'isActive' => 0
+
+            ]);
+
+        $this->dispatch('alert',type:'success',title:'وضعیت رکوردغیرفعال  شد');
+        }else{
+            $logo->update([
+                'isActive' => 1
+            ]);
+
+        $this->dispatch('alert',type:'success',title:'وضعیت رکوردفعال  شد');
+        }
+        
+    }
+
+    public function deleteLogo($id){
+        $logo = Footerlogo::find($id);
+        $logo->delete();
+
+        $this->dispatch('alert',type:'success',title:'اطلاعات با موفقیت حذف شد');
+      }
+    }
+
+

@@ -1,6 +1,6 @@
 @section('title','لوگو های فوتر')
 <div>
-    <div class="container-fluid">
+    <div class="container-fluid" wire:init='loadLogo'>
         <div class="inbox-area">
             <div class="row">
                 <div class="col-12 box-margin">
@@ -43,7 +43,29 @@
                                                                       </select>
                                                                 </div>
 
-                                                                <input type="file"  wire:model="image" class="form-control">
+                                                                <div class="input-group cust-file-button mb-3">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" wire:model="image"
+                                                                            class="custom-file-input form-control"
+                                                                            id="inputGroupFile03">
+                                                                        <label class="custom-file-label"
+                                                                            for="inputGroupFile03">تصویر
+                                                                            لوگو</label>
+                                                                        <span class="text-info"
+                                                                            wire:target='image' wire:loading>درحال
+                                                                            بارگزاری...</span>
+                                                                    </div>
+                                                                </div>
+                                                                {{-- <div class="progress">
+                                                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                  </div> --}}
+                                                                <div wire:ignore id="progressbar" class="progress mt-1 mb-1" style="display: none">
+                                                                <div class="progress-bar" role="progressbar" style="width:25%;" aria-valuenow="0"
+                                                                 aria-valuemin="0" aria-valuemax="100">0٪
+                                                                </div>
+                                                            </div>
+
+
                                                                 @if ($image)
                                                                     <img class="form-control mt-3 mb-3" src="{{ $image->temporaryUrl() }}" alt="">
                                                                 @endif
@@ -73,19 +95,34 @@
                                                                     <th>عملیات</th>
                                                                 </tr>
                                                             </thead>
-
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>نام کاربری</td>
-                                                                    <td>سیستم</td>
-                                                                    <td>شرکت</td>
-                                                                    <td>35</td>
-                                                                    <td>
-                                                                        <a href="javascript:void(0);" class="action-icon"> <i class="zmdi zmdi-edit zmdi-custom"></i></a>
-                                                                        <a href="javascript:void(0);" class="action-icon"> <i class="zmdi zmdi-delete zmdi-custom"></i></a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
+                                                            @if ($readyToLoad)
+                                                                <tbody>
+                                                                    @foreach ($logos as $logo)
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="/{{ $logo->image }}" width="50px">
+                                                                            </td>
+                                                                            <td>{{ $logo->title }}</td>
+                                                                            <td>{{ $logo->type=="top" ? 'لوگوی بالای فوتر' : 'لوگوی پایین فوتر' }}</td>
+                                                                            <td>
+                                                                                @if ($logo->isActive==1)
+                                                                                    <a wire:click="changeStatus({{ $logo->id }})" style="cursor:pointer"><span class="badge badge-success">فعال</span></a>
+                                                                                @else
+                                                                                    <a wire:click="changeStatus({{ $logo->id }})" style="cursor:pointer"><span class="badge badge-danger">غیرفعال</span></a>
+                                                                                @endif
+                                                                            </td>
+                                                                            <td>
+                                                                                <button class="action-icon"> <i class="zmdi zmdi-edit zmdi-custom"></i></button>
+                                                                                <button  wire:click="deleteLogo({{ $logo->id }})" class="action-icon"> <i class="zmdi zmdi-delete zmdi-custom"></i></button>
+                                                                            </td>
+                                                                        </tr>
+                                                                    @endforeach
+                                                                </tbody>
+                                                                  @else
+                                                                    <div class="alert alert-warning">
+                                                                        در حال بارگزاری اطلاعات از پایگاه داده ....
+                                                                    </div>
+                                                                     @endif
                                                         </table>
 
                                                     </div> <!-- end card body-->
@@ -103,4 +140,34 @@
             </div>
         </div>
     </div>
+
 </div>
+<script>
+
+    document.addEventListener('livewire:init', () => {
+        let progressSection = document.querySelector('#progressbar'),
+            progressBar = progressSection.querySelector('.progress-bar');
+
+        document.addEventListener('livewire-upload-start', () => {
+            console.log('شروع بارگزاری');
+            progressSection.style.display = 'flex';
+        });
+
+        document.addEventListener('livewire-upload-finish', () => {
+            console.log('اتمام بارگزاری');
+            progressSection.style.display = 'none';
+        });
+
+        document.addEventListener('livewire-upload-error', () => {
+            console.log('خطا در بارگزاری');
+            progressSection.style.display = 'none';
+        });
+
+        document.addEventListener('livewire-upload-progress', (event) => {
+            console.log(`${event.detail.progress}%`);
+            progressBar.style.width = `${event.detail.progress}%`;
+            progressBar.textContent = `${event.detail.progress}%`;
+        });
+    });
+</script>
+
