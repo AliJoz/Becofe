@@ -2,7 +2,7 @@
 @section('title', 'فروشگاه')
 @section('content')
     <!--    Start Main Slider -------------------->
-    <div class="col-12">
+    {{-- <div class="col-12">
         <aside class="adplacement-header">
             <a href="{{ $bannerTop->link }}"><img style="width:100%" src="{{ $bannerTop->image }}"
                     alt="{{ $bannerTop->alt }}"></a>
@@ -272,7 +272,7 @@
                                                                     data-labels='{"label-second": "", "label-minute": "", "label-hour": ""}'>
                                                                 </div>
                                                             </div> --}}
-                                                            </div>
+                                                            {{-- </div>
                                                         </div>
                                                     @endif
                                                 @endforeach
@@ -285,12 +285,12 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </div> --}}
+    {{-- </section> --}}
     <!--slider-amazing----------------------------->
 
     <!--   adplacement -------------------->
-    <div class="adplacement">
+    {{-- <div class="adplacement">
         @foreach ($banner4 as $baner4)
             <div class="col-6 col-lg-3 pull-right" style="padding-left:0;">
                 <a href="{{ $baner4->link }}" class="item-adplacement">
@@ -298,11 +298,11 @@
                 </a>
             </div>
         @endforeach
-    </div>
+    </div> --}}
     <!--   adplacement -------------------->
 
     <!--slider-amazing----------------------------->
-    <section class="section-slider amazing-section mb-3 mt-4" style="background: #6bb927;">
+    {{-- <section class="section-slider amazing-section mb-3 mt-4" style="background: #6bb927;">
         <div class="container-amazing">
             <div class="container-main">
                 <div>
@@ -535,11 +535,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--slider-amazing----------------------------->
 
     <!--    Slider-sidebar------------------->
-    <div class="col-lg-2 col-md-12 col-xs-12 pull-left">
+    {{-- <div class="col-lg-2 col-md-12 col-xs-12 pull-left">
         <div class="slider-sidebar">
             <div class="widget-suggestion widget card">
                 <header class="card-header promo-single-headline">
@@ -617,11 +617,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--    Slider-sidebar------------------->
 
     <!--   slider-product-------------------->
-    <div class="col-lg-10 col-md-12 col-xs-12 pull-right mt-2">
+    {{-- <div class="col-lg-10 col-md-12 col-xs-12 pull-right mt-2">
         <div class="row">
             <div class="col-12">
                 <div class="widget widget-product card">
@@ -750,10 +750,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!--        category--------------------------->
-    <div class="col-12">
+    {{-- <div class="col-12">
         <div class="promotion-categories-container mt-4 mb-4">
             <span class="promotion-categories-title">بیش از ۲،۰۰۰،۰۰۰ کالا در دسته‌بندی‌های مختلف</span>
             <div class="category-container">
@@ -809,10 +809,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--        category--------------------------->
 
-    <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
+    {{-- <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
         <div class="row">
             <div class="col-12">
                 <div class="widget widget-product card">
@@ -1004,11 +1004,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--   slider-product-------------------->
 
     <!--   adplacement -------------------->
-    <div class="adplacement">
+    {{-- <div class="adplacement">
         <div class="col-6 col-lg-3 pull-right" style="padding-left:0;">
             <a href="#" class="item-adplacement">
                 <img src="{{ asset('home/images/post-adplacement/1000009159.jpg') }}" title="صوتی و تصویری"
@@ -1035,11 +1035,11 @@
                     alt="adplacement">
             </a>
         </div>
-    </div>
+    </div> --}}
     <!--   adplacement -------------------->
 
     <!--   slider-product-------------------->
-    <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
+    {{-- <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
         <div class="row">
             <div class="col-12">
                 <div class="widget widget-product card">
@@ -1175,11 +1175,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--   slider-product-------------------->
 
     <!--   adplacement -------------------->
-    <div class="adplacement">
+    {{-- <div class="adplacement">
         @foreach ($banner2 as $baner2)
             <div class="col-lg-6 col-xs-12 pull-right">
                 <a href="{{ $baner2->link }}" class="item-adplacement">
@@ -1188,12 +1188,12 @@
             </div>
         @endforeach
 
-    </div>
+    </div> --}}
     <!--   adplacement -------------------->
 
 
     <!--   slider-product-------------------->
-    <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
+    {{-- <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
         <div class="row">
             <div class="col-12">
                 <div class="widget widget-product card">
@@ -1329,9 +1329,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
-    <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
+    {{-- <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
         <div class="row">
             <div class="col-12">
                 <div class="widget widget-product card">
@@ -1467,20 +1467,20 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--   slider-product-------------------->
 
 
     <!--banner----------------------------->
-    <div class="col-12">
+    {{-- <div class="col-12">
         <div class="banner" style=" height: auto;">
             <a href="#"><img src="{{ asset('home/images/promo/1000013242.jpg') }}" alt="banner"></a>
         </div>
-    </div>
+    </div> --}}
     <!--banner----------------------------->
 
     <!--   slider-product-------------------->
-    <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
+    {{-- <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
         <div class="row">
             <div class="col-12">
                 <div class="widget widget-product card">
@@ -1559,9 +1559,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
-    <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
+    {{-- <div class="col-lg-12 col-md-12 col-xs-12 pull-right">
         <div class="row">
             <div class="col-12">
                 <div class="widget widget-product card">
@@ -1697,7 +1697,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--   slider-product-------------------->
 
 @endsection

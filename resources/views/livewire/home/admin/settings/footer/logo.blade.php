@@ -32,32 +32,31 @@
                                                                 @include('errors.errors')
                                                                 <div class="form-group">
                                                                     <label for="exampleInputEmail111">عنوان لوگو:</label>
-                                                                    <input type="text" wire:model="Footerlogo.title" class="form-control" id="exampleInputEmail111">
+                                                                    <input type="text" wire:model="title" class="form-control" id="exampleInputEmail111">
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="exampleInputEmail12">جایگاه لوگو:</label>
-
-                                                                        <select class="form-control"  wire:model="Footerlogo.type" style="width: 100%;">
-                                                                            <option value="">-- هیچکدام --</option>
+                                                                    <select class="form-control"  wire:model="type" style="width: 100%;">
+                                                                        <option value="">-- هیچکدام --</option>
                                                                         <option value="top">لوگوی بالای فوتر</option>
                                                                         <option value="bottom">لوگوی پایین فوتر</option>
                                                                       </select>
                                                                 </div>
 
-                                                                <input type="file"  wire:model="image" class="form-control">
-                                                                @if ($image)
-                                                                    <img class="form-control mt-3 mb-3 " src="{{ $image->temporaryUrl() }}" alt="">
-                                                                @endif
-                                                                <button type="submit" class="btn btn-outline-success mb-2 mr-2 m-3" style="float:left;"><i class="fa fa-save"></i> ذخیره</button>
+                                                                <div class="checkbox checkbox-primary d-inline">
+                                                                    <input type="checkbox" wire:model="isActive" id="checkbox-p-1" checked="">
+                                                                    <label for="checkbox-p-1" class="cr">فعال</label>
+                                                                </div>
+                                                                <button type="submit" class="btn btn-outline-success mb-2 mr-2" style="float:left;"><i class="fa fa-save"></i> ذخیره</button>
                                                             </form>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="col-12 col-lg-6 box-margin">
+                                            <div class="col-12 col-lg-8 box-margin">
                                                 <div class="card">
-                                                    <div class="card-body p-3">
+                                                    <div class="card-body">
                                                         <h4 class="card-title mb-2">لیست لوگو های فوتر</h4>
                                                         <button type="button" class="btn btn-danger mb-2 mr-2" style="float:left;margin-top:-37px;"><i class="fa fa-refresh"></i> سطل زباله</button>
                                                         <button type="button" class="btn btn-primary mb-2 mr-2" style="float:left;margin-top:-37px;"><i class="fa fa-file-excel-o"></i> خروجی اکسل</button>
@@ -104,4 +103,3 @@
         </div>
     </div>
 </div>
-

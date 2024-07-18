@@ -45,15 +45,6 @@ class Footersetingseeder extends Seeder
             'socialLink4' => '#',
             'socialLink5' => '#',
             'socialLink6' => '#',
-
-
-
-
-
         ]);
-
-
-
      }
-
 }
