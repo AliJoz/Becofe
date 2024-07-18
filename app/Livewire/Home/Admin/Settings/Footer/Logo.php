@@ -4,51 +4,61 @@ namespace App\Livewire\Home\Admin\Settings\Footer;
 
 use Livewire\Component;
 use App\Models\Admin\settings\Footerlogo;
-
+use Livewire\WithFileUploads;
 class Logo extends Component
 {
     public $title;
     public $type;
     public $isActive;
     public $image;
-    public object $footerLogo;
-
-    public function mount(){
-        $this->footerLogo = new Footerlogo;
-    }
-
+    //public object $footerLogo;
+    use WithFileUploads;
+    // public function mount(){
+    //     $this->footerLogo = new Footerlogo;
+    // }
+    public Footerlogo $Footerlogo;
     protected $rules = [
         'title'    => 'required',
         'type'     => 'required',
-        'isActive' => 'required',
+        'image'     => 'nullable',
     ];
+
 
     public function LogoForm(){
 
         $this->validate();
 
-        $this->footerLogo->title= $this->title;
-        $this->footerLogo->type = $this->type;
-        $this->footerLogo->isActive = 1;
-        $this->footerLogo->save();
+        // $this->footerLogo->title= $this->title;
+        // $this->footerLogo->type = $this->type;
+        // $this->footerLogo->isActive = 1;
+        // $this->footerLogo->save();
+
+
         // OR
 
-        // Footerlogo::create([
-        //     'title'    => $this->title,
-        //     //......
-        // ])
+        $logo =  Footerlogo::create([
+            'title'    => $this->title,
+            'type'     => $this->type,
+            'isActive' => 1,
+            //......
+        ]);
 
+        if($this->image){
+            $logo->update([
+                'image' => $this->uploadImage()
+            ]);
+        }
 
         $this->dispatch('alert',type:'success',title:'عملیات با موفقیت فوتر لوگو انجام شد');
 
-// code list shodaneshoon ro neveshtid?tel cheeck
+
     }
 
     public function uploadImage(){
         $year = now()->year;
         $month = now()->month;
         $directory = "footerlogo/$year/$month";
-        $name = $this->image->getOriginalName();
+        $name = $this->image->getClientOriginalName();
         $this->image->storeAs($directory,$name);
         return "$directory/$name";
     }
