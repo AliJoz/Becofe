@@ -21,6 +21,7 @@ class Logo extends Component
     // public function mount(){
     //     $this->footerLogo = new Footerlogo;
     // }
+    public $deleteId;
     public $search;
     protected $queryString = ['search'];
     public Footerlogo $Footerlogo;
@@ -100,11 +101,11 @@ class Logo extends Component
 
     public function deleteId($id)
     {
-
-        $this->del=$id;
+          $this->deleteId=$id;
+dd($this->deleteId);
     }
 
-    public function delete()
+    public function deleted()
     {
         $logo = Footerlogo::find($this->deleteId);
         $logo->delete();

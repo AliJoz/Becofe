@@ -29,7 +29,7 @@
 
                             <button type="button" class="btn btn-secondary close-btn" data-dismiss="modal">خیر</button>
 
-                            <button type="button" wire:click.prevent="delete()" class="btn btn-danger close-modal"
+                            <button type="button" wire:click.prevent="deleted()" class="btn btn-danger close-modal"
                                 data-dismiss="modal">حذف کن</button>
 
                         </div>
