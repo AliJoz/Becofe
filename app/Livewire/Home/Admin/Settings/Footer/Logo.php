@@ -5,6 +5,7 @@ namespace App\Livewire\Home\Admin\Settings\Footer;
 use Livewire\Component;
 use App\Models\Admin\settings\Footerlogo;
 use Livewire\WithFileUploads;
+use Livewire\WithPagination;
 class Logo extends Component
 {
     public $title;
@@ -12,11 +13,16 @@ class Logo extends Component
     public $isActive;
     public $image;
     public $readyToLoad = false;
+
+    use WithPagination;
+    protected $paginationTheme = 'bootstrap';
     //public object $footerLogo;
     use WithFileUploads;
     // public function mount(){
     //     $this->footerLogo = new Footerlogo;
     // }
+    public $search;
+    protected $queryString = ['search'];
     public Footerlogo $Footerlogo;
     protected $rules = [
         'title'    => 'required',
@@ -28,14 +34,6 @@ class Logo extends Component
     public function LogoForm(){
 
         $this->validate();
-
-        // $this->footerLogo->title= $this->title;
-        // $this->footerLogo->type = $this->type;
-        // $this->footerLogo->isActive = 1;
-        // $this->footerLogo->save();
-
-
-        // OR
 
         $logo =  Footerlogo::create([
             'title'    => $this->title,
@@ -63,17 +61,23 @@ class Logo extends Component
         $this->image->storeAs($directory,$name);
         return "$directory/$name";
     }
+    public function loadLogo()
+    {
+        $this->readyToLoad = true;
+    }
+    public function search(){
+        $logos = $this->readyToLoad ? Footerlogo::where('title', 'LIKE', '%' . $this->search . '%')->latest()->paginate(2) : [];
+    }
 
     public function render()
     {
-        $logos = Footerlogo::all();
+        $logos = $this->readyToLoad ? Footerlogo::where('title', 'LIKE', '%' . $this->search . '%')->latest()->paginate(2) : [];
+
         return view('livewire.home.admin.settings.footer.logo',compact('logos'));
     }
 
 
-    public function loadLogo(){
-        $this->readyToLoad = true;
-    }
+
 
     public function changeStatus($id){
         $logo = Footerlogo::find($id);
@@ -91,11 +95,18 @@ class Logo extends Component
 
         $this->dispatch('alert',type:'success',title:'وضعیت رکوردفعال  شد');
         }
-        
+
     }
 
-    public function deleteLogo($id){
-        $logo = Footerlogo::find($id);
+    public function deleteId($id)
+    {
+
+        $this->del=$id;
+    }
+
+    public function delete()
+    {
+        $logo = Footerlogo::find($this->deleteId);
         $logo->delete();
 
         $this->dispatch('alert',type:'success',title:'اطلاعات با موفقیت حذف شد');
