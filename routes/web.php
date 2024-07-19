@@ -36,3 +36,7 @@ Route::middleware([
 //     require base_path('/routes/admin.php');
 // });
 
+
+\Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
