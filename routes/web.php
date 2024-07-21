@@ -39,4 +39,5 @@ Route::middleware([
 
 \Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/register', App\Livewire\Home\Users\Register::class)->name('register');
+Route::get('/login', App\Livewire\Home\Users\Login::class)->name('login');

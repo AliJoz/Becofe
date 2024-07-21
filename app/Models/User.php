@@ -26,9 +26,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'name', 'mobile', 'email', 'password'
     ];
 
     /**
@@ -49,7 +47,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $appends = [
-        'profile_photo_url',
+        'mobile_verified_at' => 'datetime',
     ];
 
     /**

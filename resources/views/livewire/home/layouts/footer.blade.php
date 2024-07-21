@@ -3,7 +3,9 @@
     <footer>
         <div class="footer-jump">
             <a href="#">
-                <span class="footer-jump-angle"><i class="fa fa-angle-up"></i> {{$footer->uplable}} </span>
+                <span class=" flex justify-center align-middle footer-jump-angle"><svg class="w-6 h-6 md:w-8 md:h-8 mr-3">
+                    <use href="#arowdo"></use>
+                  </svg> {{$footer->uplable}} </span>
             </a>
         </div>
 
