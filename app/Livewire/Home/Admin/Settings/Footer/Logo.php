@@ -113,6 +113,7 @@ class Logo extends Component
 
    public function deleteId($id)
     {
+        dd($id);
         $this->deleteId = $id;
     }
 
