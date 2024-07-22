@@ -3,7 +3,8 @@
 namespace App\Livewire\Home\Admin\Settings\Footer;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
-
+use App\Models\Admin\Log;
+use Illuminate\Support\Facades\Auth;
 class Lable extends Component
 {
     public $uplable,$widerLable1,$widerLable2,$widerLable3,$widerLable4,$widerLable5,$soctaiLable,$rrsLable,$suppirtLable,$emailLable,$aboutHeadLable,$addresLable,$copyright,$phoneLable,$aboutbodyLable;
@@ -74,6 +75,16 @@ class Lable extends Component
         'phoneLable'=>$this->phoneLable,
         'aboutbodyLable'=>$this->aboutbodyLable
             ]);
+
+//Create Log
+Log::create([
+    'user_id' => Auth::user()->id,
+    'ip' => $_SERVER['REMOTE_ADDR'],
+    'actionType' => 'update',
+    'description' => 'برچسب های فوتر توسط کاربر ویرایش شد'
+]);
+
+
 
         $this->dispatch('alert',type:'success',title:'عملیات با موفقیت فوتر انجام شد');
 

@@ -10,6 +10,7 @@
       <!-- logo -->
       <nav class="flex gap-x-4 md:gap-x-9 items-center h-14">
         <img
+        href="{{ route('home') }}"
         class="w-[59px] h-[56px]"
         src="{{asset('img/app-logo.png')}}"
         alt="golden coffee"
@@ -140,7 +141,7 @@
             </svg>
             <span
               class="hidden lg:inline-block font-dana-B text-xl pl-10 tracking-tightest"
-              ><a  href="{{ route('login') }}">  ورود | ثبت نام </a></span
+              ><a  href="{{ route('login') }}" class="font-dana-Med text-base pl-12">  ورود | ثبت نام </a></span
             >
           </>
         </div>
@@ -247,7 +248,7 @@
               <div>
                 <a class="flex items-end mt-4 gap-x-2"  href="{{ route('login') }}">
                   <svg class="w-6 h-6"><use href="#arrowLeft"></use></svg>
-                   <span>ورود | ثبت‌نام </span>
+                   <span class="font-dana-Med text-xl">ورود | ثبت‌نام </span>
                 </a>
 
                 <a class="flex btnThem mt-4 gap-x-2" href="#">

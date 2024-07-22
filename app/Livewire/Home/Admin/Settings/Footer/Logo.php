@@ -6,6 +6,9 @@ use Livewire\Component;
 use App\Models\Admin\settings\Footerlogo;
 use Livewire\WithFileUploads;
 use Livewire\WithPagination;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Admin\Log;
+
 class Logo extends Component
 {
     public $title;
@@ -14,10 +17,10 @@ class Logo extends Component
     public $image;
     public $readyToLoad = false;
 
-    use WithPagination;
+
     protected $paginationTheme = 'bootstrap';
     //public object $footerLogo;
-    use WithFileUploads;
+
     // public function mount(){
     //     $this->footerLogo = new Footerlogo;
     // }
@@ -32,86 +35,110 @@ class Logo extends Component
     ];
 
 
-    public function LogoForm(){
-
+    public function LogoForm()
+    {
         $this->validate();
-
-        $logo =  Footerlogo::create([
-            'title'    => $this->title,
-            'type'     => $this->type,
+        $logo = $this->Footerlogo->query()->create([
+            'title'    => $this->Footerlogo->title,
+            'type'     => $this->Footerlogo->type,
+            'url'      => $this->Footerlogo->url,
             'isActive' => 1,
-            //......
         ]);
-
-        if($this->image){
+        if ($this->image) {
             $logo->update([
                 'image' => $this->uploadImage()
             ]);
         }
+        $this->resetForm();
 
-        $this->dispatch('alert',type:'success',title:'عملیات با موفقیت فوتر لوگو انجام شد');
+        //Create Log
+        Log::create([
+            'user_id' => Auth::user()->id,
+            'ip' => $_SERVER['REMOTE_ADDR'],
+            'actionType' => 'create',
+            'description' => 'یک لوگو ایجاد شد'. ' '.$logo->title
+        ]);
 
+        $this->dispatch('alert',type:'success',title:'وضعیت رکورد با موفقیت تغییر کرد');
 
     }
 
-    public function uploadImage(){
+    public function uploadImage()
+    {
         $year = now()->year;
         $month = now()->month;
         $directory = "footerlogo/$year/$month";
-        $name = $this->image->getClientOriginalName();
-        $this->image->storeAs($directory,$name);
-        return "$directory/$name";
-    }
-    public function loadLogo()
-    {
-        $this->readyToLoad = true;
-    }
-    public function search(){
-        $logos = $this->readyToLoad ? Footerlogo::where('title', 'LIKE', '%' . $this->search . '%')->latest()->paginate(2) : [];
+        $name = time() . '-' . $this->image->getClientOriginalName();
+        $name = str_replace(' ', '-', $name);
+        $this->image->storeAs($directory, $name);
+        return "/$directory/$name";
     }
 
     public function render()
     {
-        $logos = $this->readyToLoad ? Footerlogo::where('title', 'LIKE', '%' . $this->search . '%')->latest()->paginate(2) : [];
-
-        return view('livewire.home.admin.settings.footer.logo',compact('logos'));
+        $logos = $this->readyToLoad ? Footerlogo::where('title', 'LIKE', '%' . $this->search . '%')->latest()->paginate(5) : [];
+        return view('livewire.admin.settings.footer.logo', compact('logos'));
     }
 
+    public function loadLogo()
+    {
+        $this->readyToLoad = true;
+    }
 
-
-
-    public function changeStatus($id){
+    public function changeStatus($id)
+    {
         $logo = Footerlogo::find($id);
-        if($logo->isActive == 1){
+        if ($logo->isActive == 1) {
             $logo->update([
                 'isActive' => 0
-
             ]);
-
-        $this->dispatch('alert',type:'success',title:'وضعیت رکوردغیرفعال  شد');
-        }else{
+        } else {
             $logo->update([
                 'isActive' => 1
             ]);
-
-        $this->dispatch('alert',type:'success',title:'وضعیت رکوردفعال  شد');
         }
+
+        //Create Log
+        Log::create([
+            'user_id' => Auth::user()->id,
+            'ip' => $_SERVER['REMOTE_ADDR'],
+            'actionType' => 'update',
+            'description' => 'وضعیت لوگو تغییر کرد'
+        ]);
+
+        $this->dispatch('alert',type:'success',title:'وضعیت رکورد با موفقیت تغییر کرد');
 
     }
 
     public function deleteId($id)
     {
-          $this->deleteId=$id;
-dd($this->deleteId);
+        $this->deleteId = $id;
     }
 
-    public function deleted()
+    public function delete()
     {
         $logo = Footerlogo::find($this->deleteId);
         $logo->delete();
 
-        $this->dispatch('alert',type:'success',title:'اطلاعات با موفقیت حذف شد');
-      }
+        //Create Log
+        Log::create([
+            'user_id' => Auth::user()->id,
+            'ip' => $_SERVER['REMOTE_ADDR'],
+            'actionType' => 'delete',
+            'description' => 'لوگوی فوتر حذف شد'
+        ]);
+
+
+        $this->dispatch('alert',type:'success',title:' ردیف با موفقیت حذف شد');
+
     }
 
-
+    public function resetForm()
+    {
+        $this->Footerlogo->title = null;
+        $this->Footerlogo->type = null;
+        $this->Footerlogo->image = null;
+        $this->Footerlogo->url = null;
+        $this->image = null;
+    }
+}
