@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 use Hekmatinasser\Verta\Verta;
-
+use Illuminate\Support\Facades\Auth;
 class Log extends Model
 {
     use HasFactory;
@@ -23,8 +23,8 @@ class Log extends Model
 
     public static function logWritter($actionType, $description)
     {
-        if (\Auth::check()) {
-            $user = \Auth::user()->id;
+        if (Auth::check()) {
+            $user =Auth::user()->id;
         } else {
             $user = null;
         }
