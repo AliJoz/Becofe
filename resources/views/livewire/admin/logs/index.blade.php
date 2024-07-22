@@ -8,18 +8,14 @@
                         <div class="card-body">
                             <h4 class="card-title mb-2">گزارشات سیستمی</h4>
                             <hr>
-                            <input wire:model.live="search" type="search" class="form-control mb-2 w-50 float-left"
-                                placeholder="جستجو...">
-
                             <table id="datatable-buttons" class="table table-striped dt-responsive nowrap w-100">
                                 <thead>
                                     <tr>
                                         <th>نام کاربر</th>
-                                        <th>نقش کاربری</th>
                                         <th>موبایل کاربر</th>
                                         <th>آیپی</th>
                                         <th>نوع کار</th>
-                                        <th>شرح عملیات - عنوان</th>
+                                        <th>شرح عملیات</th>
                                         <th>تاریخ انجام</th>
                                     </tr>
                                 </thead>
@@ -29,37 +25,17 @@
                                         @foreach ($logs as $log)
                                             <tr>
                                                 <td>
-                                                    @if ($log->user_id == null)
-                                                        ناشناس
-                                                    @else
-                                                        {{ $log->user->name }}
-                                                    @endif
+                                                    {{ $log->user->name }}
                                                 </td>
                                                 <td>
-                                                    @if ($log->user_id == null)
-                                                        -
-                                                    @else
-                                                        @foreach ($log->user->roles as $role)
-                                                            <span
-                                                                style="border: 1px solid #ccc;padding: 0px 2px;border-radius: 3px;">{{ $role->description }}</span>
-                                                        @endforeach
-                                                    @endif
-
-                                                </td>
-                                                <td>
-                                                    @if ($log->user_id == null)
-                                                        -
-                                                    @else
-                                                        {{ $log->user->mobile }}
-                                                    @endif
-
+                                                    {{ $log->user->mobile }}
                                                 </td>
                                                 <td>
                                                     {{ $log->ip }}
                                                 </td>
                                                 <td>
                                                     @switch($log->actionType)
-                                                        @case('create')
+                                                        @case('insert')
                                                             <div class="badge badge-success">ایجاد</div>
                                                         @break
 
@@ -71,41 +47,18 @@
                                                             <div class="badge badge-primary">ویرایش</div>
                                                         @break
 
-                                                        @case('restore')
-                                                            <div class="badge badge-info">بازیابی</div>
-                                                        @break
-
-                                                        @case('sendSms')
-                                                            <div class="badge badge-info">ارسال کد تائید</div>
-                                                        @break
-
-                                                        @case('resendSms')
-                                                            <div class="badge badge-info">ارسال کد تائید مجدد</div>
-                                                        @break
-
-                                                        @case('verifyCode')
-                                                            <div class="badge badge-warning">تائید موبایل</div>
-                                                        @break
-
-                                                        @case('login')
-                                                            <div class="badge"
-                                                                style="background-color:orange;color:white">ورود به سایت</div>
-                                                        @break
-
-                                                        @case('logout')
-                                                            <div class="badge"
-                                                                style="background-color:orange;color:white">خروج از سایت</div>
-                                                        @break
-
                                                         @default
                                                     @endswitch
-                                                    {{-- <div class="badge badge-warning">دیگر</div> --}}
+                                                    {{-- <div class="badge badge-info">دیگر</div>
+                                                <div class="badge badge-warning">دیگر</div> --}}
                                                 </td>
                                                 <td>
                                                     {{ $log->description }}
                                                 </td>
                                                 <td>
                                                     {{ $log->created_at }}
+                                                </td>
+                                                <td>
                                                 </td>
                                             </tr>
                                         @endforeach

@@ -1,15 +1,13 @@
 <?php
 
-namespace App\Http\Livewire\Admin\Logs;
+namespace App\Livewire\Admin\Logs;
 
 use App\Models\Admin\Log;
 use Livewire\Component;
 use Livewire\WithPagination;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Index extends Component
 {
-    use AuthorizesRequests;
 
     public Log $log;
     public $readyToLoad = false;
@@ -26,9 +24,7 @@ class Index extends Component
 
     public function render()
     {
-        $this->authorize('logs',Log::class);
-
-        $logs = $this->readyToLoad ? Log::where('description', 'LIKE', '%' . $this->search . '%')->latest()->paginate(15) : [];
+        $logs = $this->readyToLoad ? Log::where('actionType', 'LIKE', '%' . $this->search . '%')->latest()->paginate(15) : [];
         return view('livewire.admin.logs.index',compact('logs'));
     }
 

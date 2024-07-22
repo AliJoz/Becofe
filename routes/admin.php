@@ -27,7 +27,7 @@ Route::get('/settings/footer/logo', App\Livewire\Home\Admin\Settings\Footer\Logo
 
 
 // //------------------------------------------Logs--------------------------------------------//
-// Route::get('/logs', App\Http\Livewire\Admin\Logs\Index::class)->name('admin.logs');
+Route::get('/logs', App\Livewire\Admin\Logs\Index::class)->name('admin.logs');
 
 // //---------------------------------------Permissions---------------------------------------//
 // Route::get('/permissions', App\Http\Livewire\Admin\Permissions\Index::class)->name('admin.permissions');
