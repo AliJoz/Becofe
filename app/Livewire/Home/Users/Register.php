@@ -32,7 +32,7 @@ class Register extends Component
             'password' => Hash::make($this->password),
         ]);
 
-        dd($this->name);
+        dd($this->mobile);
     }
     public function render()
     {

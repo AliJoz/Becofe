@@ -134,13 +134,13 @@
         <span class="w-px h-14 inline-block bg-white/20"></span>
         <!-- Login and register form -->
         <div class="login flex">
-          <a  href="{{ route('login') }}" class="flex items-center gap-x-2.5">
+          <a  class="flex items-center gap-x-2.5">
             <svg class="w-6 h-6 md:w-8 md:h-8">
               <use href="#arrowLeft"></use>
             </svg>
             <span
               class="hidden lg:inline-block font-dana-B text-xl pl-10 tracking-tightest"
-              >ورود | ثبت نام</span
+              ><a  href="{{ route('login') }}">  ورود | ثبت نام </a></span
             >
           </>
         </div>
@@ -245,9 +245,9 @@
             >
               <!-- Register -->
               <div>
-                <a class="flex items-center mt-4 gap-x-2" href="#">
+                <a class="flex items-end mt-4 gap-x-2"  href="{{ route('login') }}">
                   <svg class="w-6 h-6"><use href="#arrowLeft"></use></svg>
-                  <span <a href="{{ route('login') }}"></a>ورود | ثبت‌نام</span>
+                   <span>ورود | ثبت‌نام </span>
                 </a>
 
                 <a class="flex btnThem mt-4 gap-x-2" href="#">

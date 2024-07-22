@@ -42,3 +42,4 @@ Route::middleware([
 Route::get('/register', App\Livewire\Home\Users\Register::class)->name('register');
 Route::get('/login', App\Livewire\Home\Users\Login::class)->name('login');
 Route::post('/logout', [App\Http\Controllers\HomeController::class,'logout'])->name('logout');
+Route::get('/verify-mobile/{id}',App\livewire\Home\Users\VerifyMobile::class )->name('verify.mobile');

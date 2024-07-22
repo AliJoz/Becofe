@@ -6,56 +6,50 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-
-
+use App\Models\Admin\Log;
+use App\Models\Home\Token;
 class User extends Authenticatable
 {
 
     use HasFactory;
 
-    use Notifiable;
-
+    protected $connection = "mysql";
 
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var string[]
      */
     protected $fillable = [
-        'name', 'mobile', 'email', 'password'
+        'name', 'mobile', 'email', 'password',
     ];
 
     /**
      * The attributes that should be hidden for serialization.
      *
-     * @var array<int, string>
+     * @var array
      */
     protected $hidden = [
         'password',
         'remember_token',
-        'two_factor_recovery_codes',
-        'two_factor_secret',
     ];
 
     /**
-     * The accessors to append to the model's array form.
+     * The attributes that should be cast.
      *
-     * @var array<int, string>
+     * @var array
      */
-    // protected $appends = [
-    //     'mobile_verified_at' => 'datetime',
-    // ];
+    protected $casts = [
+        'mobile_verified_at' => 'datetime',
+    ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
+    public function logs()
     {
-        return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
-        ];
+        return $this->belongsToMany(Log::class);
+    }
+
+    public function tokens()
+    {
+        return $this->belongsToMany(Token::class);
     }
 }

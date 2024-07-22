@@ -3,7 +3,7 @@
     <div id="main">
         <div class="col-lg-4 col-md-6 col-xs-12 mx-auto">
             <div class="account-box">
-                <a href="{{ route('home') }}" class="logo-account"><img src="{{ asset('home/images/logo-login.png') }}" alt="logo"></a>
+                <a href="{{ route('home') }}" class="logo-account"><img src="{{ asset('home/images/logo.png') }}" alt="logo"></a>
                 <span class="account-head-line" style="text-align:center">ثبت نام</span>
                 <div class="content-account">
                     <form id="register" wire:submit.prevent='RegisterForm' novalidate="novalidate">
@@ -12,7 +12,7 @@
                         <label for="name">نام و نام خانوادگی:</label>
                         <input type="text" id="name" required wire:model.defer="name" class="input-email-account" style="text-align:right">
                         <label for="mobile">شماره موبایل:</label>
-                        <input type="text" required id="mobile" wire:model.defer="mobile" class="input-email-account" placeholder="">
+                        <input type="text" inputmode="numeric" required id="mobile" wire:model.defer="mobile" class="input-email-account" placeholder="">
                         <label for="password">رمز عبور:</label>
                         <input type="password" required id="password" wire:model.defer="password" class="input-password" placeholder="">
                         <label for="password_confirmation">تکرار رمز عبور:</label>

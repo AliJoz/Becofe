@@ -5,6 +5,9 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
+use App\Models\Admin\Log;
+use App\Models\Home\Token;
+use Carbon\Carbon;
 
 class Login extends Component
 {
@@ -32,8 +35,35 @@ class Login extends Component
         if (isset($user)) {
             if ($user->mobile_verified_at == null) {
                 //TODO
-                dd('Not verified');
+                $code = random_int(1000, 9999);
+                if (isset($user->token->expired_at)) {
+                    if ($user->token->expired_at < Carbon::now()) {
+                        Token::create([
+                            'user_id' => $user->id,
+                            'code' => $code,
+                            'type' => 'register',
+                            'expired_at' => Carbon::now()->addMinutes(3)
+                        ]);
+                        //ovvjcd95qay5i8d
+                        // User::sendSms($code, $user->mobile);
+                    }
+                }else
+                {
+                    Token::create([
+                        'user_id' => $user->id,
+                        'code' => $code,
+                        'type' => 'register',
+                        'expired_at' => Carbon::now()->addMinutes(3)
+                    ]);
+                    //ovvjcd95qay5i8d
+                    // User::sendSms($code, $user->mobile);
+                }
+
+                // Log::logWritter('sendSms','یک پیامک ارسال شد - '.$user->name);
+
+                return to_route('verify.mobile',[$user->id,$code]);
             }
+
 
             if (Hash::check($this->password, $user->password)) {
                 Auth::loginUsingId($user->id);
@@ -41,11 +71,13 @@ class Login extends Component
                 return to_route('admin.home');
             } else {
 
-                dd('wrong password');
+                $this->dispatch('alert',type:'error',title:'اطلاعات ورود نادرست است!');
+
             }
         } else {
 
-            dd('not Exist');
+            $this->dispatch('alert',type:'error',title:'اطلاعات ورود نادرست است!');
+
         }
     }
     public function render()
