@@ -77,7 +77,7 @@ class Logo extends Component
     public function render()
     {
         $logos = $this->readyToLoad ? Footerlogo::where('title', 'LIKE', '%' . $this->search . '%')->latest()->paginate(5) : [];
-        return view('livewire.admin.settings.footer.logo', compact('logos'));
+        return view('livewire.home.admin.settings.footer.logo', compact('logos'));
     }
 
     public function loadLogo()
