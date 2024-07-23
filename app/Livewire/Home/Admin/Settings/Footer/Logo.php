@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Livewire\Home\Admin\Settings\Footer;
-
 use Livewire\Component;
 use App\Models\Admin\settings\Footerlogo;
 use Livewire\WithFileUploads;
@@ -31,7 +30,7 @@ class Logo extends Component
     protected $rules = [
         'title'    => 'required',
         'type'     => 'required',
-        'image'     => 'required',
+        'image'     => 'nullable',
     ];
 
    use WithFileUploads;
@@ -43,16 +42,20 @@ class Logo extends Component
         $logo =  Footerlogo::create([
             'title'    => $this->title,
             'type'     => $this->type,
+            // 'imgage'  => $this->image,
             'isActive' => 1,
             //......
         ]);
 
-        if($this->image){
-            dd($logo->image);
+        if ($this->image) {
             $logo->update([
                 'image' => $this->uploadImage()
             ]);
+           
+            
         }
+
+
         Log::create([
                     'user_id' => Auth::user()->id,
                     'ip' => $_SERVER['REMOTE_ADDR'],
@@ -65,18 +68,19 @@ class Logo extends Component
 
     }
 
-    public function uploadImage(){
+    public function uploadImage()
+    {
         $year = now()->year;
         $month = now()->month;
         $directory = "footerlogo/$year/$month";
         $name = $this->image->getClientOriginalName();
-        $this->image->storeAs($directory,$name);
+        $this->image->storeAs($directory, $name);
         return "$directory/$name";
     }
 
     public function render()
     {
-        $logos = $this->readyToLoad ? Footerlogo::where('title', 'LIKE', '%' . $this->search . '%')->latest()->paginate(2) : [];
+        $logos = $this->readyToLoad ? Footerlogo::where('title', 'LIKE', '%' . $this->search . '%')->latest()->paginate(3) : [];
 
         return view('livewire.home.admin.settings.footer.logo',compact('logos'));
     }
@@ -113,7 +117,7 @@ class Logo extends Component
 
    public function deleteId($id)
     {
-        dd($id);
+       // dd($id);
         $this->deleteId = $id;
     }
 
@@ -129,12 +133,8 @@ class Logo extends Component
             'actionType' => 'delete',
             'description' => 'لوگوی فوتر حذف شد'
         ]);
-
-
         $this->dispatch('alert',type:'success',title:' ردیف با موفقیت حذف شد');
-
     }
-
 }
 
 
