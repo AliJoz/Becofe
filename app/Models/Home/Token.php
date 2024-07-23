@@ -9,7 +9,7 @@ class Token extends Model
 {
     use HasFactory;
     protected $connection = "mysql";
-    protected $fillable = ['user_id','code','type','expired_at'];
+    protected $fillable = ['user_id','code','type','expired_at' ];
 
     public function user()
     {

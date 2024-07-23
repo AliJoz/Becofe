@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Models\Admin\Log;
 use App\Models\Home\Token;
+
 class User extends Authenticatable
 {
 
@@ -21,7 +22,7 @@ class User extends Authenticatable
      * @var string[]
      */
     protected $fillable = [
-        'name', 'mobile', 'email', 'password',
+        'name', 'mobile', 'email', 'password', 'mobile_verified_at'
     ];
 
     /**

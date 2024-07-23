@@ -1,0 +1,661 @@
+[2024-07-23 16:10:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:11:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:12:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:13:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:14:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:15:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:16:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:17:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:18:49] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:19:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:20:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:21:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:22:49] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:23:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:24:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:25:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:26:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:27:49] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:28:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:29:49] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:30:49] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:31:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:32:22] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at E:\\Becafe\\Becofe\\app\\Livewire\\Home\\Users\\VerifyMobile.php:52)
+[stacktrace]
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\livewire\\\\Ho...')
+#2 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1097): is_a('App\\\\livewire\\\\Ho...', 'Illuminate\\\\Rout...', true)
+#3 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1036): Illuminate\\Routing\\Route->controllerMiddleware()
+#4 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(820): Illuminate\\Routing\\Route->gatherMiddleware()
+#5 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(802): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#6 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#7 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#8 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#9 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#10 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#11 E:\\Becafe\\Becofe\\vendor\\livewire\\livewire\\src\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#30 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1188): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#31 E:\\Becafe\\Becofe\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#32 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('E:\\\\Becafe\\\\Becof...')
+#33 {main}
+"} 
+[2024-07-23 16:32:34] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at E:\\Becafe\\Becofe\\app\\Livewire\\Home\\Users\\VerifyMobile.php:45)
+[stacktrace]
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\livewire\\\\Ho...')
+#2 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1097): is_a('App\\\\livewire\\\\Ho...', 'Illuminate\\\\Rout...', true)
+#3 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1036): Illuminate\\Routing\\Route->controllerMiddleware()
+#4 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(820): Illuminate\\Routing\\Route->gatherMiddleware()
+#5 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(802): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#6 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#7 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#8 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#9 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#10 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#11 E:\\Becafe\\Becofe\\vendor\\livewire\\livewire\\src\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#30 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1188): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#31 E:\\Becafe\\Becofe\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#32 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('E:\\\\Becafe\\\\Becof...')
+#33 {main}
+"} 
+[2024-07-23 16:32:36] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at E:\\Becafe\\Becofe\\app\\Livewire\\Home\\Users\\VerifyMobile.php:45)
+[stacktrace]
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\livewire\\\\Ho...')
+#2 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1097): is_a('App\\\\livewire\\\\Ho...', 'Illuminate\\\\Rout...', true)
+#3 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1036): Illuminate\\Routing\\Route->controllerMiddleware()
+#4 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(820): Illuminate\\Routing\\Route->gatherMiddleware()
+#5 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(802): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#6 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#7 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#8 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#9 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#10 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#11 E:\\Becafe\\Becofe\\vendor\\livewire\\livewire\\src\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#30 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1188): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#31 E:\\Becafe\\Becofe\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#32 E:\\Becafe\\Becofe\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('E:\\\\Becafe\\\\Becof...')
+#33 {main}
+"} 
+[2024-07-23 16:32:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:33:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-23 16:34:48] local.ERROR: Uncaught Error: Class "Laravel\Jetstream\Membership" not found in E:\Becafe\Becofe\app\Models\Membership.php:7
+Stack trace:
+#0 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(576): include()
+#1 E:\Becafe\Becofe\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\Becafe\\Becof...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Memb...')
+#3 Command line code(1): class_exists('App\\Models\\Memb...')
+#4 [internal function]: {closure}('App\\Models\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Error: Class \"Laravel\\Jetstream\\Membership\" not found in E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7
+Stack trace:
+#0 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(576): include()
+#1 E:\\Becafe\\Becofe\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('E:\\\\Becafe\\\\Becof...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Models\\\\Memb...')
+#3 Command line code(1): class_exists('App\\\\Models\\\\Memb...')
+#4 [internal function]: {closure}('App\\\\Models\\\\Memb...')
+#5 Command line code(1): array_filter(Array, Object(Closure))
+#6 {main}
+  thrown at E:\\Becafe\\Becofe\\app\\Models\\Membership.php:7)
+[stacktrace]
+#0 {main}
+"} 

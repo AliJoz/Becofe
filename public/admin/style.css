@@ -613,7 +613,7 @@ img {
 }
 
 .text-muted {
-    color: #98a6ad !important;
+    display:none;
 }
 
 .card .header-title {

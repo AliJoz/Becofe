@@ -10,9 +10,9 @@
 <link rel="stylesheet" href="{{ asset('home/css/style.css') }}">
 
 
-@vite([
+{{-- @vite([
     'resources/css/app.css',
     'resources/js/app.js'
-])
+]) --}}
 @yield('styles')
 <livewire:styles />

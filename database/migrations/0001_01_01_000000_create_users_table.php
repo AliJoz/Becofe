@@ -42,7 +42,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('becofes.users');
-            $table->enum('type', ['register']);
+            $table->enum('type',['register']);
             $table->string('code', 4)->unique();
             $table->string('expired_at');
             $table->timestamps();

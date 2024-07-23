@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     return view('welcome');
@@ -37,7 +37,7 @@ Route::middleware([
 // });
 
 
-\Auth::routes();
+Auth::routes();
 
 Route::get('/register', App\Livewire\Home\Users\Register::class)->name('register');
 Route::get('/login', App\Livewire\Home\Users\Login::class)->name('login');

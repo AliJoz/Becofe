@@ -1,16 +1,16 @@
 <div>
-    @section('styles')
-        <script src="{{ asset('home/js/alpine.min.js') }}"></script>
-    @endsection
-    @section('title','تائید موبایل')
+    <?php $__env->startSection('styles'); ?>
+        <script src="<?php echo e(asset('home/js/alpine.min.js')); ?>"></script>
+    <?php $__env->stopSection(); ?>
+    <?php $__env->startSection('title','تائید موبایل'); ?>
     <div id="main">
         <div class="col-lg-4 col-md-6 col-xs-12 mx-auto">
             <div class="account-box">
-                <a href="index.html" class="logo-account"><img src="{{ asset('home/images/logo.png') }}"
+                <a href="index.html" class="logo-account"><img src="<?php echo e(asset('home/images/logo.png')); ?>"
                         alt="logo"></a>
                 <div class="message-light">
                     <div class="massege-light">
-                        برای شماره همراه <b>{{ $user->mobile }}</b> کد تایید ارسال گردید
+                        برای شماره همراه <b><?php echo e($user->mobile); ?></b> کد تایید ارسال گردید
                         <br>
                     </div>
                     <div class="content-account">
@@ -38,14 +38,14 @@
                     </div>
 
                     <div x-data="{ show: false }" x-show="show" x-init="setTimeout(() => show = true, 180000)" style="display: none">
-                        <a href="" style="font-weight:bold" wire:click="resendSms({{ $this->user->id }})"
+                        <a href="" style="font-weight:bold" wire:click="resendSms(<?php echo e($this->user->id); ?>)"
                              class="link-border-verify form-account-link mt-5">ارسال مجدد کد تائید</a>
                     </div>
 
                 </div>
                 <div class="account-footer">
                     <span>کاربر جدید هستید؟</span>
-                    <a href="{{ route('register') }}" class="btn-link-register">ثبت نام </a>
+                    <a href="<?php echo e(route('register')); ?>" class="btn-link-register">ثبت نام </a>
                 </div>
             </div>
         </div>
@@ -90,4 +90,4 @@
             return minutes + ':' + seconds;
         }
     </script>
-</div>
+</div><?php /**PATH E:\Becafe\Becofe\resources\views/livewire/home/users/verify-mobile.blade.php ENDPATH**/ ?>

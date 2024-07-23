@@ -108,7 +108,7 @@
                                                                     class="fa fa-file-excel-o"></i> خروجی اکسل</button>
                                                             <hr>
                                                             <input wire:model.live="search" type="search"
-                                                                class="form-control mb-2 w-28 float-right"
+                                                                class="form-control mb-2 w-25 float-right"
                                                                 placeholder="جستجو...">
 
                                                             <table id="datatable-buttons"
@@ -129,7 +129,7 @@
                                                                         @foreach ($logos as $logo)
                                                                             <tr>
                                                                                 <td>
-                                                                                    <img src="/{{ $logo->image }}"
+                                                                                    <img src="/{{$logo->image}}"
                                                                                         width="50px">
                                                                                 </td>
                                                                                 <td>{{ $logo->title }}</td>
