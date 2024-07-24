@@ -42,4 +42,7 @@ Auth::routes();
 Route::get('/register', App\Livewire\Home\Users\Register::class)->name('register');
 Route::get('/login', App\Livewire\Home\Users\Login::class)->name('login');
 Route::post('/logout', [App\Http\Controllers\HomeController::class,'logout'])->name('logout');
-Route::get('/verify-mobile/{id}',App\livewire\Home\Users\VerifyMobile::class )->name('verify.mobile');
+Route::get('/verify-mobile/{id}',App\livewire\Home\Users\VerifyMobile::class )->name('verify-mobile');
+Route::get('/forget-password',App\livewire\Home\Users\FotgetPass::class)->name('forget-password');
+Route::get('/verify-mobile-forget/{id}', App\livewire\Home\Users\FotgetVerifypass::class)->name('verify.forget.password');
+Route::get('/change-password/{id}', App\livewire\Home\Users\ChangePass::class)->name('change.password');

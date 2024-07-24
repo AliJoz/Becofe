@@ -3,7 +3,7 @@
     <div id="main">
         <div class="col-lg-4 col-md-6 col-xs-12 mx-auto">
             <div class="account-box">
-                <a href="<?php echo e(route('home')); ?>" class="logo-account"><img src="<?php echo e(asset('home/images/logo.png')); ?>" alt="logo"></a>
+                <a href="<?php echo e(route('home')); ?>" class="logo-account"><img src="<?php echo e(asset('/home/images/logo.png')); ?>" alt="logo"></a>
                 <span class="account-head-line" style="text-align:center">ورود</span>
                 <div class="content-account">
                     <hr>
@@ -20,7 +20,7 @@
                                 <i class="fa fa-sign-in sign-in"></i>
                             </button>
                         </div>
-                        
+                        <a href=<?php echo e(route('forget-password')); ?>" class="account-link-password">رمز خود را فراموش کرده ام</a>
 
                         <div class="form-auth-row">
                             <label for="remember" class="ui-checkbox">

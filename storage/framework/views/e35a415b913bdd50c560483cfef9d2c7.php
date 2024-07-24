@@ -23,10 +23,10 @@
                                         <th>تاریخ انجام</th>
                                     </tr>
                                 </thead>
-                                <!--[if BLOCK]><![endif]--><?php if($readyToLoad): ?>
+                                <?php if($readyToLoad): ?>
 
                                     <tbody>
-                                        <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $logs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $log): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                        <?php $__currentLoopData = $logs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $log): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                             <tr>
                                                 <td>
                                                     <?php echo e($log->user->name); ?>
@@ -41,7 +41,7 @@
 
                                                 </td>
                                                 <td>
-                                                    <!--[if BLOCK]><![endif]--><?php switch($log->actionType):
+                                                    <?php switch($log->actionType):
                                                         case ('create'): ?>
                                                             <div class="badge badge-success">ایجاد</div>
                                                         <?php break; ?>
@@ -59,7 +59,7 @@
                                                         <?php break; ?>
 
                                                         <?php default: ?>
-                                                    <?php endswitch; ?><!--[if ENDBLOCK]><![endif]-->
+                                                    <?php endswitch; ?>
                                                 
                                                 </td>
                                                 <td>
@@ -73,7 +73,7 @@
                                                 <td>
                                                 </td>
                                             </tr>
-                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
                                     </tbody>
                                     <?php echo e($logs->links()); ?>
@@ -82,7 +82,7 @@
                                     <div class="alert alert-warning">
                                         در حال بارگزاری اطلاعات از پایگاه داده ....
                                     </div>
-                                <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
+                                <?php endif; ?>
                             </table>
 
                         </div> <!-- end card body-->
@@ -94,4 +94,4 @@
         </div>
     </div>
 </div>
-<?php /**PATH E:\Becafe\Becofe\resources\views/livewire/admin/logs/index.blade.php ENDPATH**/ ?>
+<?php /**PATH E:\Becafe\Becofe\resources\views\livewire\admin\logs\index.blade.php ENDPATH**/ ?>

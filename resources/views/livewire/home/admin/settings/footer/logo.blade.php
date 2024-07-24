@@ -129,8 +129,7 @@
                                                                         @foreach ($logos as $logo)
                                                                             <tr>
                                                                                 <td>
-                                                                                    <img src="/{{$logo->image}}"
-                                                                                        width="50px">
+                                                                                    <img src="{{ asset(Storage::url($logo->image)) }}" width="50px">
                                                                                 </td>
                                                                                 <td>{{ $logo->title }}</td>
                                                                                 <td>{{ $logo->type == 'top' ? 'لوگوی بالای فوتر' : 'لوگوی پایین فوتر' }}

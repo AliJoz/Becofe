@@ -5,12 +5,14 @@ namespace App\Livewire\Home\Users;
 use Livewire\Component;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use App\Models\Home\Token;
+use Carbon\Carbon;
 
 class Register extends Component
 {
 
     public User $user;
-    public $name,$mobile,$password,$password_confirmation;
+    public $name, $mobile, $password, $password_confirmation;
 
     public function mount()
     {
@@ -18,7 +20,7 @@ class Register extends Component
     }
 
     protected $rules = [
-        'name'    => 'required|min:5',
+        'name'    => 'required|min:2',
         'mobile'    => 'required|ir_mobile|unique:mysql.users',
         'password'    => 'required|min:8|confirmed',
     ];
@@ -26,13 +28,45 @@ class Register extends Component
     public function RegisterForm()
     {
         $this->validate();
-        User::create([
-            'name' => $this->name,
-            'mobile' => $this->mobile,
-            'password' => Hash::make($this->password),
-        ]);
+        
+        $code = random_int(1000, 9999);
+        $userExist = User::where('mobile', $this->mobile)->first();
 
-        dd($this->mobile);
+        if ($userExist && $userExist->mobile_verified_at == null) {
+            Token::create([
+                'user_id' => $userExist->id,
+                'code' => $code,
+                'type' => 'verify',
+                'expired_at' => Carbon::now()->addMinutes(3)
+            ]);
+
+            //TODO
+            //  send  Token 
+            dd( redirect()->route('verify-mobile',[$userExist->id])
+        );
+            return to_route('verify-mobile',$userExist->id);
+           
+        
+         }
+
+           
+         elseif ($userExist && $userExist->mobile_verified_at != null) {
+            $this->dispatch('alert', type: 'error', title: 'این کاربر از قبل ثبت نام کرده است!');
+        } else {
+            $user = User::create([
+                'name' => $this->name,
+                'mobile' => $this->mobile,
+                'password' => Hash::make($this->password),
+            ]);
+            Token::create([
+                'user_id' => $user->id,
+                'code' => $code,
+                'type' => 'verify',
+                'expired_at' => Carbon::now()->addMinutes(3)
+            ]);
+            return to_route('verify-mobile',$user->id);
+        
+        }
     }
     public function render()
     {

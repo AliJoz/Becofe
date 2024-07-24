@@ -29,7 +29,7 @@
                     </form>
 
                     <div x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 180000)">
-                        <div class="form-account-row">دریافت مجدد کد تایید(
+                        <div class="form-account-row" style="text-align:center">دریافت مجدد کد تایید(
                             <span data-countdownseconds="180" id="countdown">
                                 03:00
                             </span>
@@ -38,7 +38,7 @@
                     </div>
 
                     <div x-data="{ show: false }" x-show="show" x-init="setTimeout(() => show = true, 180000)" style="display: none">
-                        <a href="" style="font-weight:bold" wire:click="resendSms({{ $this->user->id }})"
+                        <a href="" style="font-weight:bold" style="text-align:center" wire:click="resendSms({{ $this->user->id }})"
                              class="link-border-verify form-account-link mt-5">ارسال مجدد کد تائید</a>
                     </div>
 
@@ -51,7 +51,7 @@
         </div>
 
     </div>
-
+<!-- Timer alpin js -->
     <script>
         var seconds, temp;
         var GivenTime = document.getElementById('countdown').innerHTML;

@@ -35,8 +35,8 @@ class VerifyMobile extends Component
                     'mobile_verified_at' => now()
                 ]);
                 Auth::loginUsingId($this->user->id);
-                dd("ad");
-                return redirect('admin.home');
+              
+                return to_route('admin.home');
             } else {
                 //TODO
                 //show button repeat send sms
