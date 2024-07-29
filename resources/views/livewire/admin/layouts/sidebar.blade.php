@@ -382,6 +382,13 @@
                             <li><a href="#">موجودی</a></li>
                         </ul>
                     </li> --}}
+                    <li class="treeview {{ Request::routeIs(['admin.roles','admin.permissions']) ? 'active' : '' }}">
+                        <a href="javascript:void(0)"><i class="fa fa-user-secret"></i> <span>سطوح دسترسی</span> <i class="fa fa-angle-left"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="{{ route('admin.roles') }}" {{ Request::routeIs(['admin.roles']) ? "style=color:#54c6d0" : '' }}>نقش ها</a></li>
+                            <li><a href="{{ route('admin.permissions') }}" {{ Request::routeIs(['admin.permissions']) ? "style=color:#54c6d0" : '' }}>سطح دسترسی</a></li>
+                        </ul>
+                    </li>
                     <li><a {{ Request::routeIs(['admin.logs']) ? "style=color:#54c6d0" : '' }}
                         href="{{ route('admin.logs') }}"><i class="zmdi zmdi-chart"></i><span>گزارشات سیستم</span></a></li>
                     <li class="treeview {{ Request::routeIs(['admin.settings.footer.label','admin.settings.footer.social','admin.settings.footer.logo']) ? 'active' : ''}}">

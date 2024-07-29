@@ -106,13 +106,7 @@
                                                                     <div class="badge badge-info">بازیابی</div>
                                                                 <?php break; ?>
 
-                                                                <?php case ('sendSms'): ?>
-                                                                    <div class="badge badge-warning">ارسال کد تائید</div>
-                                                                <?php break; ?>
-
-                                                                <?php case ('resendSms'): ?>
-                                                                    <div class="badge badge-warning">ارسال کد تائید مجدد</div>
-                                                                <?php break; ?>
+                                                               
 
                                                                 <?php case ('verifyCode'): ?>
                                                                     <div class="badge badge-warning">تائید موبایل</div>

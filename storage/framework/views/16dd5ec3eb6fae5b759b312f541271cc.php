@@ -129,7 +129,7 @@
                                                                         <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $logos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $logo): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                                                             <tr>
                                                                                 <td>
-                                                                                    <img src="<?php echo e(asset(Storage::url($logo->image))); ?>" width="50px">
+                                                                                    <img src="<?php echo e(asset($logo->image)); ?>" width="50px">
                                                                                 </td>
                                                                                 <td><?php echo e($logo->title); ?></td>
                                                                                 <td><?php echo e($logo->type == 'top' ? 'لوگوی بالای فوتر' : 'لوگوی پایین فوتر'); ?>

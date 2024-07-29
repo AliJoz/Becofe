@@ -19,6 +19,13 @@
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="<?php echo e(Request::routeIs('admin.home') ? 'active' : ''); ?>"><a href="<?php echo e(route('admin.home')); ?>"><i class="zmdi zmdi-view-dashboard"></i><span>داشبورد</span></a></li>
                     
+                    <li class="treeview <?php echo e(Request::routeIs(['admin.roles','admin.permissions']) ? 'active' : ''); ?>">
+                        <a href="javascript:void(0)"><i class="fa fa-user-secret"></i> <span>سطوح دسترسی</span> <i class="fa fa-angle-left"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo e(route('admin.roles')); ?>" <?php echo e(Request::routeIs(['admin.roles']) ? "style=color:#54c6d0" : ''); ?>>نقش ها</a></li>
+                            <li><a href="<?php echo e(route('admin.permissions')); ?>" <?php echo e(Request::routeIs(['admin.permissions']) ? "style=color:#54c6d0" : ''); ?>>سطح دسترسی</a></li>
+                        </ul>
+                    </li>
                     <li><a <?php echo e(Request::routeIs(['admin.logs']) ? "style=color:#54c6d0" : ''); ?>
 
                         href="<?php echo e(route('admin.logs')); ?>"><i class="zmdi zmdi-chart"></i><span>گزارشات سیستم</span></a></li>

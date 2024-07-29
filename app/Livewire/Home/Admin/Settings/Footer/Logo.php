@@ -31,7 +31,7 @@ class Logo extends Component
     protected $rules = [
         'title'    => 'required',
         'type'     => 'required',
-        'image'     => 'nullable',
+        'image'     => 'sometimes',
     ];
 
     use WithFileUploads;
@@ -73,8 +73,8 @@ class Logo extends Component
         $directory = "public/footerlogo/$year/$month";
         $name = $this->image->getClientOriginalName();
         // $this->image->storeAs($directory, $name);
-        $path = $this->image->store(path: "/public/footerlogo/$year/$month");
-        return "  $path";
+        $path = $this->image->store("footerlogo/$year/$month", ['disk' => 'public']);
+        return $path;
     }
 
     public function render()
@@ -116,8 +116,8 @@ class Logo extends Component
 
     //    public function deleteId($id)
     //     {
-    //        // dd($id);
     //         $this->deleteId = $id;
+    //         // dd( $this->deleteId );
     //     }
 
     public function deleteId($id)

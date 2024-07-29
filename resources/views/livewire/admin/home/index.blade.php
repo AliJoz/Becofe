@@ -103,13 +103,7 @@
                                                                     <div class="badge badge-info">بازیابی</div>
                                                                 @break
 
-                                                                @case('sendSms')
-                                                                    <div class="badge badge-warning">ارسال کد تائید</div>
-                                                                @break
-
-                                                                @case('resendSms')
-                                                                    <div class="badge badge-warning">ارسال کد تائید مجدد</div>
-                                                                @break
+                                                               
 
                                                                 @case('verifyCode')
                                                                     <div class="badge badge-warning">تائید موبایل</div>

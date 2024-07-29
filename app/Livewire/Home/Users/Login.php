@@ -65,6 +65,7 @@ class Login extends Component
 
             if (Hash::check($this->password, $user->password)) {
                 Auth::loginUsingId($user->id);
+                Log::logWritter('login', 'کاربر در سایت وارد شد - ' . $user->name);
                 //TODO
                 return to_route('admin.home');
             } else {

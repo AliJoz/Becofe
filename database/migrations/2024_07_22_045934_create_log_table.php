@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::connection('mysql-settings')->dropIfExists('logs');
+        Schema::connection('mysql-setting')->dropIfExists('logs');
     }
 };
