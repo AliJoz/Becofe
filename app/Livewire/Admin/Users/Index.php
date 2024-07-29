@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Admin\Users;
+namespace App\Livewire\Admin\Users;
 
 use App\Models\Admin\Log;
 use App\Models\User;
@@ -57,7 +57,8 @@ class Index extends Component
         //Create Log
         Log::logWritter('delete', 'کاربر حذف شد - ' . $user->name);
 
-        $this->emit('toast', 'success', 'ردیف با موفقیت حذف شد');
+        $this->dispatch('alert',type:'success',title:'ردیف با موفقیت حذف شد');
+
     }
 
     public function changeStatus($id)
@@ -78,7 +79,8 @@ class Index extends Component
         //Create Log
         Log::logWritter('update','وضعیت کاربر تغییر کرد - '.$user->name);
 
-        $this->emit('toast', 'success', 'وضعیت رکورد با موفقیت تغییر کرد');
+        $this->dispatch('alert',type:'success',title:'وضعیت رکورد با موفقیت تغییر کرد');
+
     }
 
     public function changeStatusMobile($id)
@@ -99,7 +101,8 @@ class Index extends Component
         //Create Log
         Log::logWritter('update','وضعیت موبایل کاربر تغییر کرد - '.$user->name);
 
-        $this->emit('toast', 'success', 'وضعیت رکورد با موفقیت تغییر کرد');
+        $this->dispatch('alert',type:'success',title:'وضعیت رکورد با موفقیت تغییر کرد');
+
     }
 
     public function changeStatusEmail($id)
@@ -120,7 +123,8 @@ class Index extends Component
         //Create Log
         Log::logWritter('update','وضعیت موبایل کاربر تغییر کرد - '.$user->name);
 
-        $this->emit('toast', 'success', 'وضعیت رکورد با موفقیت تغییر کرد');
+        $this->dispatch('alert',type:'success',title:'وضعیت رکورد با موفقیت تغییر کرد');
+        
     }
 
     public function loginForce($id)
