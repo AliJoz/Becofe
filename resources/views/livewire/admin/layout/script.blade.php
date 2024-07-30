@@ -15,5 +15,5 @@
     <script src="{{ mix('/js/app.js') }}"></script>
     <script src="{{ asset('admin/plugins/select2/js/select2.full.min.js') }}" defer></script>
 
-    @yield('scripts')
     <livewire:scripts />
+    @yield('scripts')

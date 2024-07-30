@@ -28,7 +28,7 @@ class Edit extends Component
         $this->permission->update($this->validate());
         $this->permission->roles()->sync($this->roles);
         //Create Log
-        Log::logWritter('create', 'سطح دسترسی ویرایش شد - ' . $this->permission->title);
+        Log::logWritter('update', 'سطح دسترسی ویرایش شد - ' . $this->permission->title);;
 
         $this->dispatch('alert', type: 'success', title: 'رکورد با موفقیت ثبت شد');
 
@@ -58,9 +58,9 @@ class Edit extends Component
         $permission->delete();
 
         //Create Log
-        Log::logWritter('delete', 'یک سطح دسترسی حذف شد - ' . $permission->title);
+        Log::logWritter('delete', 'سطح دسترسی حذف شد - ' . $permission->title);
 
         $this->dispatch('alert', type: 'success', title: 'رکورد با موفقیت حذف شد');
-        
+
     }
 }

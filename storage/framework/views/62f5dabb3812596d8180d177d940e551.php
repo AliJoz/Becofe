@@ -19,11 +19,11 @@
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="<?php echo e(Request::routeIs('admin.home') ? 'active' : ''); ?>"><a href="<?php echo e(route('admin.home')); ?>"><i class="zmdi zmdi-view-dashboard"></i><span>داشبورد</span></a></li>
                     
-                    <li class="treeview <?php echo e(Request::routeIs(['admin.roles','admin.permissions','admin.roles.edit','admin.permissions.edit']) ? 'active' : ''); ?>">
+                    <li class="treeview <?php echo e(Request::routeIs(['admin.roles','admin.permissions','admin.roles.edit','admin.permissions.edit','admin.roles.trash','admin.permissions.trash']) ? 'active' : ''); ?>">
                         <a href="javascript:void(0)"><i class="fa fa-user-secret"></i> <span>سطوح دسترسی</span> <i class="fa fa-angle-left"></i></a>
                         <ul class="treeview-menu">
-                            <li><a href="<?php echo e(route('admin.roles')); ?>" <?php echo e(Request::routeIs(['admin.roles','admin.roles.edit']) ? "style=color:#54c6d0" : ''); ?>>نقش ها</a></li>
-                            <li><a href="<?php echo e(route('admin.permissions')); ?>" <?php echo e(Request::routeIs(['admin.permissions','admin.permissions.edit']) ? "style=color:#54c6d0" : ''); ?>>سطح دسترسی</a></li>
+                            <li><a href="<?php echo e(route('admin.roles')); ?>" <?php echo e(Request::routeIs(['admin.roles','admin.roles.edit','admin.roles.trash']) ? "style=color:#54c6d0" : ''); ?>>نقش ها</a></li>
+                            <li><a href="<?php echo e(route('admin.permissions')); ?>" <?php echo e(Request::routeIs(['admin.permissions','admin.permissions.edit','admin.permissions.trash']) ? "style=color:#54c6d0" : ''); ?>>سطح دسترسی</a></li>
                         </ul>
                     </li>
                     <li><a <?php echo e(Request::routeIs(['admin.logs']) ? "style=color:#54c6d0" : ''); ?>

@@ -16,6 +16,8 @@
                             <div class="row">
                                 <div class="col-sm-12 col-xs-12">
                                     <form wire:submit.prevent='PermissionForm'>
+                                        <?php echo $__env->make('errors.errors', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
                                         <div class="form-group">
                                             <label for="exampleInputEmail111">عنوان دسترسی(لاتین):</label>
                                             <input type="text" wire:model.lazy='permission.title' class="form-control"
@@ -23,19 +25,21 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail12">توضیحات دسترسی(فارسی):</label>
-                                            <input type="text" wire:model.lazy='permission.description' class="form-control"
-                                                id="exampleInputEmail111">
+                                            <input type="text" wire:model.lazy='permission.description'
+                                                class="form-control" id="exampleInputEmail111">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail12">نقش ها:</label>
-                                            <select class="js-example-basic-single form-control" multiple="multiple"
-                                                wire:model.lazy="roles" style="width: 100%;">
-                                                <!--[if BLOCK]><![endif]--><?php $__currentLoopData = \App\Models\Admin\Permissions\Role::all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $role): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                    <option value="<?php echo e($role->id); ?>"><?php echo e($role->description); ?>
+                                            <div wire:ignore>
+                                                <select class="js-example-basic-single form-control" multiple="multiple"
+                                                    wire:model.lazy="roles" id="roles" style="width: 100%;">
+                                                    <!--[if BLOCK]><![endif]--><?php $__currentLoopData = \App\Models\Admin\Permissions\Role::all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $role): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                        <option value="<?php echo e($role->id); ?>"><?php echo e($role->description); ?>
 
-                                                    </option>
-                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
-                                            </select>
+                                                        </option>
+                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
+                                                </select>
+                                            </div>
                                         </div>
                                         <button type="submit" class="btn btn-outline-success mb-2 mr-2"
                                             style="float:left;"><i class="fa fa-save"></i> ذخیره</button>
@@ -49,13 +53,14 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title mb-2">لیست سطح دسترسی ها</h4>
-                                <a href="<?php echo e(route('admin.permissions.trash')); ?>" type="button" class="btn btn-danger mb-2 mr-2"
-                                    style="float:left;margin-top:-37px;"><i class="fa fa-refresh"></i>  سطل زباله
+                                <a href="<?php echo e(route('admin.permissions.trash')); ?>" type="button"
+                                    class="btn btn-danger mb-2 mr-2" style="float:left;margin-top:-37px;"><i
+                                        class="fa fa-refresh"></i> سطل زباله
                                     <span class="badge badge-danger">
                                         <?php echo e(\App\Models\Admin\Permissions\Permission::onlyTrashed()->count()); ?>
 
                                     </span>
-                                    </a>
+                                </a>
                                 <button type="button" class="btn btn-primary mb-2 mr-2"
                                     style="float:left;margin-top:-37px;"><i class="fa fa-file-excel-o"></i> خروجی
                                     اکسل</button>
@@ -87,7 +92,8 @@
                                                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
                                                     </td>
                                                     <td>
-                                                        <a href="<?php echo e(route('admin.permissions.edit',$permission->id)); ?>" class="action-icon"> <i
+                                                        <a href="<?php echo e(route('admin.permissions.edit', $permission->id)); ?>"
+                                                            class="action-icon"> <i
                                                                 class="zmdi zmdi-edit zmdi-custom"></i></a>
                                                         <button wire:click="deleteId(<?php echo e($permission->id); ?>)"
                                                             data-toggle="modal" data-target="#exampleModal"
@@ -97,6 +103,9 @@
                                                 </tr>
                                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
                                         </tbody>
+                                        <?php echo e($permissions->links()); ?>
+
+
                                     <?php else: ?>
                                         <div class="alert alert-warning">
                                             در حال بارگزاری اطلاعات از پایگاه داده ....
@@ -115,12 +124,19 @@
     </div>
     <?php echo $__env->make('livewire.admin.include.modal', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-    <script src="<?php echo e(asset('admin/plugins/select2/js/select2.full.min.js')); ?>" defer></script>
-
-    <script>
-        $(document).ready(function() {
-            $('.js-example-basic-single').select2();
-        });
-    </script>
+    <?php $__env->startSection('scripts'); ?>
+        <script>
+            $(document).ready(function() {
+                $('#roles').select2();
+                $('#roles').on('change', function(e) {
+                    let data = $(this).val();
+                    window.Livewire.find('<?php echo e($_instance->getId()); ?>').set('roles', data);
+                });
+                window.livewire.on('RoleStore', () => {
+                    $('#roles').select2();
+                });
+            });
+        </script>
+    <?php $__env->stopSection(); ?>
 </div>
 <?php /**PATH E:\Becafe\Becofe\resources\views/livewire/admin/permissions/index.blade.php ENDPATH**/ ?>
