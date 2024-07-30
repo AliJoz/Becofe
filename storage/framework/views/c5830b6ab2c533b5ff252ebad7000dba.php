@@ -49,9 +49,11 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title mb-2">لیست نقش ها</h4>
-                                <button type="button" class="btn btn-danger mb-2 mr-2"
-                                    style="float:left;margin-top:-37px;"><i class="fa fa-refresh"></i> سطل
-                                    زباله</button>
+                                <a href="<?php echo e(route('admin.roles.trash')); ?>" type="button" class="btn btn-danger mb-2 mr-2"
+                                    style="float:left;margin-top:-37px;"><i class="fa fa-trash"></i> سطل زباله <span class="badge badge-danger">
+                                        <?php echo e(\App\Models\Admin\Permissions\Role::onlyTrashed()->count()); ?>
+
+                                    </span></a>
                                 <button type="button" class="btn btn-primary mb-2 mr-2"
                                     style="float:left;margin-top:-37px;"><i class="fa fa-file-excel-o"></i> خروجی
                                     اکسل</button>
@@ -79,11 +81,11 @@
                                                     <td>
                                                         <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $role->permissions; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $permission): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                                             <span
-                                                                style="border: 1px solid #ccc;padding: 0px 2px;border-radius: 3px;"><?php echo e($permission->title); ?></span>
+                                                                style="border: 1px solid #ccc;padding: 0px 2px;border-radius: 3px;"><?php echo e($permission->description); ?></span>
                                                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
                                                     </td>
                                                     <td>
-                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                        <a href="<?php echo e(route('admin.roles.edit',$role->id)); ?>" class="action-icon"> <i
                                                                 class="zmdi zmdi-edit zmdi-custom"></i></a>
                                                         <button wire:click="deleteId(<?php echo e($role->id); ?>)"
                                                             data-toggle="modal" data-target="#exampleModal"
