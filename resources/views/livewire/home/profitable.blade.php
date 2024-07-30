@@ -116,7 +116,7 @@
               >
                 <div class="relative mb-0.5 md:mb-5">
                   <img
-                    src="/img/products/p1.png"
+                    src="/img/products/p4.png"
                     class="w-32 mx-auto md:w-auto"
                     loading="lazy"
                     alt="product1"
@@ -198,7 +198,7 @@
               >
                 <div class="relative mb-0.5 md:mb-5">
                   <img
-                    src="/img/products/p1.png"
+                    src="/img/products/p6.png"
                     class="w-32 mx-auto md:w-auto"
                     loading="lazy"
                     alt="product1"
@@ -280,7 +280,7 @@
               >
                 <div class="relative mb-0.5 md:mb-5">
                   <img
-                    src="/img/products/p1.png"
+                    src="/img/products/p3.png"
                     class="w-32 mx-auto md:w-auto"
                     loading="lazy"
                     alt="product1"

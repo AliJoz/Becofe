@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('description');
+            $table->softDeletes();
             $table->timestamps();
         });
 
@@ -22,6 +23,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('description');
+            $table->softDeletes();
             $table->timestamps();
         });
 
@@ -30,6 +32,7 @@ return new class extends Migration
             $table->foreign('permission_id')->references('id')->on('becofes.permissions');
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('becofes.users');
+            $table->primary(['permission_id','user_id']);
         });
 
         Schema::create('role_user', function (Blueprint $table) {
@@ -37,6 +40,7 @@ return new class extends Migration
             $table->foreign('role_id')->references('id')->on('becofes.roles');
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('becofes.users');
+            $table->primary(['role_id','user_id']);
         });
 
         Schema::create('permission_role', function (Blueprint $table) {
@@ -44,6 +48,7 @@ return new class extends Migration
             $table->foreign('role_id')->references('id')->on('becofes.roles');
             $table->unsignedBigInteger('permission_id')->nullable();
             $table->foreign('permission_id')->references('id')->on('becofes.permissions');
+            $table->primary(['role_id','permission_id']);
         });
     }
 

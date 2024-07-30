@@ -2,13 +2,12 @@
 
 namespace App\Models\Admin\Permissions;
 
-use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Admin\Permissions\Role;
+use App\Models\Admin\Permissions\Permission;
 use Illuminate\Database\Eloquent\SoftDeletes;
-
-class Permission extends Model
+use Illuminate\Foundation\Auth\User ;
+class Role extends Model
 {
     use HasFactory;
     use SoftDeletes;
@@ -20,8 +19,9 @@ class Permission extends Model
         return $this->belongsToMany(User::class);
     }
 
-    public function roles()
+    public function permissions()
     {
-        return $this->belongsToMany(Role::class);
+        return $this->belongsToMany(Permission::class);
     }
+
 }

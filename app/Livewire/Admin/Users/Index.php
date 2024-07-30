@@ -42,12 +42,12 @@ class Index extends Component
         $this->readyToLoad = true;
     }
 
-    public function deleteId($id)
-    {
-        $this->deleteId = $id;
-    }
+    // public function deleteId($id)
+    // {
+    //     $this->deleteId = $id;
+    // }
 
-    public function delete()
+    public function deleteId()
     {
         $this->authorize('user-delete',User::class);
 
@@ -124,7 +124,7 @@ class Index extends Component
         Log::logWritter('update','وضعیت موبایل کاربر تغییر کرد - '.$user->name);
 
         $this->dispatch('alert',type:'success',title:'وضعیت رکورد با موفقیت تغییر کرد');
-        
+
     }
 
     public function loginForce($id)
