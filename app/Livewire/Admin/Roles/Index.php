@@ -5,7 +5,7 @@ use App\Models\Admin\Permissions\Role;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Admin\Log;
-use App\Models\Admin\Permissions\Permission;
+
 
 
 class Index extends Component
@@ -17,16 +17,15 @@ class Index extends Component
     protected $queryString = ['search'];
     use WithPagination;
     protected $paginationTheme = 'bootstrap';
-
+    public $permissions;
     public function mount()
     {
         $this->role = new Role;
     }
 
     protected $rules = [
-        'title'    => 'required',
-        'description'     => 'required',
-        'permissions'     => 'nullable',
+        'role.title'    => 'required',
+        'role.description'     => 'required',
     ];
 
     public function RoleForm()
@@ -36,7 +35,7 @@ class Index extends Component
             'title'    => $this->role->title,
             'description'     => $this->role->description,
         ]);
-        $role->permissions()->sync();
+        $role->permissions()->sync($this->permissions);
 
         $this->resetForm();
 
@@ -47,10 +46,8 @@ class Index extends Component
 
     public function render()
     {
-        $roles = $this->readyToLoad ? Role::where('title', 'LIKE', '%' . $this->search . '%')->latest()->paginate(5) : [];
-        $permissions = $this->readyToLoad ? Permission::all() : [];
-
-        return view('livewire.admin.roles.index', compact('roles','permissions'));
+        $roles = $this->readyToLoad ? Role::where('title', 'LIKE', '%' . $this->search . '%')->orWhere('description', 'LIKE', '%' . $this->search . '%')->latest()->paginate(5) : [];
+        return view('livewire.admin.roles.index', compact('roles'));
     }
 
     public function loadRole()
