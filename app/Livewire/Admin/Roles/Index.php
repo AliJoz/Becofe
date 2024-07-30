@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Livewire\Admin\Roles;
-
 use App\Models\Admin\Permissions\Role;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Admin\Log;
+use App\Models\Admin\Permissions\Permission;
+
 
 class Index extends Component
 {
@@ -14,9 +15,8 @@ class Index extends Component
     public $readyToLoad = false;
     public $search;
     protected $queryString = ['search'];
-    protected $paginationTheme = 'bootstrap';
-    public $permissions;
     use WithPagination;
+    protected $paginationTheme = 'bootstrap';
 
     public function mount()
     {
@@ -24,8 +24,9 @@ class Index extends Component
     }
 
     protected $rules = [
-        'role.title'    => 'required',
-        'role.description'     => 'required',
+        'title'    => 'required',
+        'description'     => 'required',
+        'permissions'     => 'nullable',
     ];
 
     public function RoleForm()
@@ -35,22 +36,21 @@ class Index extends Component
             'title'    => $this->role->title,
             'description'     => $this->role->description,
         ]);
-        $role->permissions()->sync($this->permissions);
+        $role->permissions()->sync();
 
         $this->resetForm();
 
         //Create Log
-        Log::logWritter('create', 'نقش جدید ایجاد شد - ' . $role->title);
-
-        $this->dispatch('alert',type:'success',title:'وضعیت رکورد با موفقیت تغییر کرد');
-
-
+        Log::logWritter('create','نقش جدید ایجاد شد - '.$role->title);
+        $this->dispatch('alert', type: 'success', title: 'وضعیت رکورد با موفقیت تغییر کرد');
     }
 
     public function render()
     {
-        $roles = $this->readyToLoad ? Role::where('title', 'LIKE', '%' . $this->search . '%')->orWhere('description', 'LIKE', '%' . $this->search . '%')->latest()->paginate(5) : [];
-        return view('livewire.admin.roles.index', compact('roles'));
+        $roles = $this->readyToLoad ? Role::where('title', 'LIKE', '%' . $this->search . '%')->latest()->paginate(5) : [];
+        $permissions = $this->readyToLoad ? Permission::all() : [];
+
+        return view('livewire.admin.roles.index', compact('roles','permissions'));
     }
 
     public function loadRole()
@@ -72,8 +72,7 @@ class Index extends Component
         Log::logWritter('delete', 'یک نقش حذف شد - ' . $role->title);
 
 
-        $this->dispatch('alert',type:'success',title:'ردیف با موفقیت حذف شد');
-
+        $this->dispatch('alert', type: 'success', title: 'ردیف با موفقیت حذف شد');
     }
 
     public function resetForm()

@@ -1,8 +1,6 @@
 @section('title', 'نقش ها')
 @section('styles')
     <link rel="stylesheet" href="{{ asset('admin/plugins/select2/css/select2.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('admin/css/default-assets/select.bootstrap4.css') }}">
-
 @endsection
 <div>
     <div class="main-content">
@@ -18,20 +16,20 @@
                                     <form wire:submit.prevent='RoleForm'>
                                         <div class="form-group">
                                             <label for="exampleInputEmail111">عنوان نقش(لاتین):</label>
-                                            <input type="text" wire:model.lazy='role.title' class="form-control"
+                                            <input type="text" wire:model.defer='title' class="form-control"
                                                 id="exampleInputEmail111">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail12">توضیحات نقش(فارسی):</label>
-                                            <input type="text" wire:model.lazy='role.description' class="form-control"
+                                            <input type="text" wire:model='description' class="form-control"
                                                 id="exampleInputEmail111">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail12">سطح دسترسی ها:</label>
-                                            <select class="js-example-basic-single form-control" multiple="multiple"
-                                                wire:model.lazy="permissions" style="width: 100%;">
-                                                @foreach (\App\Models\Admin\Permissions\Permission::all() as $permission)
-                                                    <option value="{{ $permission->id }}">{{ $permission->description }}
+                                            <select class="js-example-basic-single form-control"
+                                                wire:model='permissions[]' multiple="multiple" style="width: 100%;">
+                                                @foreach ($permissions as $permission)
+                                                    <option value="{{ $permission->id }}">{{ $permission->title }}
                                                     </option>
                                                 @endforeach
                                             </select>
@@ -59,7 +57,7 @@
                                     placeholder="جستجو...">
 
                                 <table id="datatable-buttons" class="table table-striped dt-responsive nowrap"
-                                    style="width:102%" wire:init='loadRole'>
+                                    style="width:104%" wire:init='loadRole'>
                                     <thead>
                                         <tr>
                                             <th>عنوان نقش</th>
@@ -84,10 +82,8 @@
                                                     <td>
                                                         <a href="javascript:void(0);" class="action-icon"> <i
                                                                 class="zmdi zmdi-edit zmdi-custom"></i></a>
-                                                        <button wire:click="deleteId({{ $role->id }})"
-                                                            data-toggle="modal" data-target="#exampleModal"
-                                                            class="action-icon"> <i
-                                                                class="zmdi zmdi-delete zmdi-custom"></i></button>
+                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                                class="zmdi zmdi-delete zmdi-custom"></i></a>
                                                     </td>
                                                 </tr>
                                             @endforeach
@@ -108,13 +104,13 @@
             </div>
         </div>
     </div>
-    @include('livewire.admin.include.modal')
+    @section('scripts')
+        <script src="{{ asset('admin/plugins/select2/js/select2.full.min.js') }}"></script>
 
-    <script src="{{ asset('admin/plugins/select2/js/select2.full.min.js') }}" defer></script>
-
-    <script>
-        $(document).ready(function() {
-            $('.js-example-basic-single').select2();
-        });
-    </script>
+        <script>
+            $(document).ready(function() {
+                $('.js-example-basic-single').select2();
+            });
+        </script>
+    @endsection
 </div>

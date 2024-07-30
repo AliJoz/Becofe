@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="<?php echo e(asset('home/css/font-awesome.min.css')); ?>">
 <link rel="stylesheet" href="<?php echo e(asset('home/css/materialdesignicons.css')); ?>">
 <link rel="stylesheet" href="<?php echo e(asset('home/css/materialdesignicons.css.map')); ?>">
-<!--    font-->
+
 <link rel="stylesheet" href="<?php echo e(asset('home/css/bootstrap.css')); ?>">
 <link rel="stylesheet" href="<?php echo e(asset('home/css/owl.carousel.min.css')); ?>">
 <link rel="stylesheet" href="<?php echo e(asset('home/css/style.css')); ?>">
